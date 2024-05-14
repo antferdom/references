@@ -800,6 +800,7 @@
 							<DT><H3 FOLDED>deepspeed-inference</H3>
 							<DL><p>
 								<DT><A HREF="https://arxiv.org/pdf/2207.00032.pdf">DeepSpeed Inference: Enabling Efficient Inference of Transformer Models at Unprecedented Scale</A>
+								<DT><A HREF="https://github.com/microsoft/DeepSpeedExamples/tree/master/inference/mii">DeepSpeedExamples/inference/mii</A>
 							</DL><p>
 						</DL><p>
 						<DT><H3 FOLDED>transformer-inference-server</H3>
@@ -1710,6 +1711,8 @@
 								<DL><p>
 									<DT><A HREF="https://arxiv.org/pdf/2204.02311.pdf">PALM: progresive larger batch size (GPT-3 style)</A>
 									<DT><A HREF="https://arxiv.org/abs/1907.04164">[1907.04164] Which Algorithmic Choices Matter at Which Batch Sizes? Insights From a Noisy Quadratic Model</A>
+									<DT><A HREF="https://twitter.com/i/bookmarks?post_id=1790024970824740949">maxing batchsize and performance</A>
+									<DT><A HREF="https://twitter.com/cloneofsimo/status/1789680163133018593">larger batch size leads to more compute-efficient optimization</A>
 								</DL><p>
 								<DT><H3 FOLDED>Dropout</H3>
 								<DL><p>
@@ -4570,9 +4573,9 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 					<DL><p>
 						<DT><H3 FOLDED>CUDA</H3>
 						<DL><p>
-							<DT><H3 FOLDED>Programming Model</H3>
+							<DT><H3 FOLDED>cuda-programming-model</H3>
 							<DL><p>
-								<DT><H3 FOLDED>Memory Model</H3>
+								<DT><H3 FOLDED>cuda-memory-model</H3>
 								<DL><p>
 									<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#memory-hierarchy">Memory Hierarchy</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=uHN5fpfu8As">Memory hierarchy</A>
@@ -4580,6 +4583,36 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 									<DT><A HREF="https://developer.download.nvidia.com/video/gputechconf/gtc/2020/presentations/s21819-optimizing-applications-for-nvidia-ampere-gpu-architecture.pdf">GPU memory architecture</A>
 									<DT><A HREF="https://developer.download.nvidia.com/CUDA/training/register_spilling.pdf">Local memory/register spilling</A>
 									<DT><A HREF="https://lwn.net/Articles/253361/">Memory part 3: Virtual Memory [LWN.net]</A>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-thread-divergence</H3>
+								<DL><p>
+									<DT><A HREF="https://www.youtube.com/watch?v=95fFNzV4sd0">Parallel C++: Thread Affinity - YouTube</A>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-branchless-computing</H3>
+								<DL><p>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-array-interface</H3>
+								<DL><p>
+									<DT><A HREF="https://numba.readthedocs.io/en/stable/cuda/cuda_array_interface.html">CUDA Array Interface (Version 3) — Numba 0+untagged.2155.g9ce83ef.dirty documentation</A>
+									<DT><A HREF="https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.interface.html#__array_interface__">The Array Interface — NumPy v1.13 Manual</A>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-learning</H3>
+								<DL><p>
+									<DT><H3 FOLDED>PMPP</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/drisspg/simple_cuda">drisspg/simple_cuda: Learnings + Exercises from the PMPP book!</A>
+										<DT><A HREF="https://github.com/olcf/cuda-training-series">olcf/cuda-training-series: Training materials associated with NVIDIA's CUDA Training Series (www.olcf.ornl.gov/cuda-training-series/)</A>
+										<DT><A HREF="https://www.amazon.es/Programming-Massively-Parallel-Processors-Hands/dp/0323912311">Programming Massively Parallel Processors: A Hands-on Approach : Hwu, Wen-mei W., Kirk, David B., El Hajj, Izzat: Amazon.es: Libros</A>
+										<DT><A HREF="https://shop.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0">Programming Massively Parallel Processors - 4th Edition | Elsevier Shop</A>
+										<DT><A HREF="http://gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf">‎gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf</A>
+										<DT><A HREF="https://www.cse.iitd.ac.in/~rijurekha/col730_2022/cudabook.pdf">NVIDIA version</A>
+										<DT><A HREF="https://www.amazon.com/Programming-Massively-Parallel-Processors-Hands/dp/0323912311">Programming Massively Parallel Processors: A Hands-on Approach: Hwu, Wen-mei W., Kirk, David B., El Hajj, Izzat: 9780323912310: Amazon.com: Books</A>
+									</DL><p>
+									<DT><A HREF="https://ahgamut.github.io/">Blog Needs a Name</A>
+									<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_OwkTgEyA6tk3UsoPBH737">Livestream - P&amp;S Hands-on Acceleration on Heterogeneous Computing Systems (Fall 2021) - YouTube</A>
+									<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi-Mnk1PxjEIG32HAGILkTOF">Livestream - Computer Architecture - ETH Zürich (Fall 2021) - YouTube</A>
+									<DT><A HREF="https://github.com/FZJ-JSC/tutorial-multi-gpu">FZJ-JSC/tutorial-multi-gpu: Efficient Distributed GPU Programming for Exascale, an SC/ISC Tutorial</A>
+									<DT><A HREF="https://github.com/NVIDIA/cuda-samples">NVIDIA/cuda-samples: Samples for CUDA Developers which demonstrates features in CUDA Toolkit</A>
 								</DL><p>
 								<DT><A HREF="https://github.com/IonThruster/CudaTutorials/blob/master/strategy.md">CudaTutorials/strategy.md</A>
 								<DT><A HREF="https://www.olcf.ornl.gov/calendar/cuda-shared-memory/">CUDA Shared Memory – Oak Ridge Leadership Computing Facility</A>
@@ -4600,42 +4633,122 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://github.com/cuda-mode/resource-stream">cuda-mode/resource-stream: CUDA related news and material links</A>
 								<DT><A HREF="https://github.com/cuda-mode/lectures">cuda-mode/lectures: Material for cuda-mode lectures</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=u70a9ssZnjI&list=LL&index=17">George Hotz | Programming | cherry computer: no more superscalar? the thneed lesson - YouTube</A>
-								<DT><H3 FOLDED>Thread Divergence</H3>
-								<DL><p>
-									<DT><A HREF="https://www.youtube.com/watch?v=95fFNzV4sd0">Parallel C++: Thread Affinity - YouTube</A>
-								</DL><p>
-								<DT><H3 FOLDED>branchless computing</H3>
-								<DL><p>
-								</DL><p>
-								<DT><H3 FOLDED>sass</H3>
-								<DL><p>
-									<DT><A HREF="https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html">1. Overview — cuda-binary-utilities (SaSS)</A>
-									<DT><A HREF="https://github.com/openai/triton/blob/8a83b141fc832dfb83dac3f335b21f3efb888afd/python/triton/tools/disasm.py#L69">triton: disasm.py#L69</A>
-								</DL><p>
 								<DT><A HREF="https://blog.speechmatics.com/pointless-gpu-optimization-exercise">An Almost Pointless Exercise in GPU Optimization</A>
 								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html">CUDA C++ Programming Guide</A>
 								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/">CUDA C++ Best Practices Guide</A>
 								<DT><A HREF="https://github.com/NVIDIA/multi-gpu-programming-models">NVIDIA/multi-gpu-programming-models: Examples demonstrating available options to program multiple GPUs</A>
 								<DT><A HREF="https://leimao.github.io/blog/Row-Major-VS-Column-Major/">Row-Major VS Column-Major - Lei Mao's Log Book</A>
 							</DL><p>
-							<DT><H3 FOLDED>(PTX) Parallel Thread Execution</H3>
+							<DT><H3 FOLDED>PTX-Parallel Thread Execution</H3>
 							<DL><p>
-								<DT><A HREF="https://docs.nvidia.com/cuda/ptx-writers-guide-to-interoperability/index.html">PTX Writers Guide to Interoperability</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-mma">matrix-multiply-accumulate (mma)</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-ldmatrix">ldmatrix</A>
 								<DT><H3 FOLDED>NVVM IR</H3>
 								<DL><p>
 									<DT><A HREF="https://github.com/NVIDIA/cuda-samples/tree/master/Samples/7_libNVVM">cuda-samples/Samples/7_libNVVM at master · NVIDIA/cuda-samples</A>
 								</DL><p>
-								<DT><A HREF="https://github.com/openai/triton/blob/8a83b141fc832dfb83dac3f335b21f3efb888afd/python/triton/tools/compile.py#L18">triton: compile.py</A>
-								<DT><A HREF="https://segmentfault.com/a/1190000041878026/en">深度学习 - Practice torch.fx Part 1 - Pytorch-based Model Optimization Quantization Artifact - 个人文章 - SegmentFault 思否</A>
-								<DT><A HREF="https://segmentfault.com/a/1190000041878026/en">Practice torch.fx Part 1 - Pytorch-based Model Optimization</A>
-								<DT><A HREF="https://twitter.com/cis_female/status/1660390038226751490">microcode: ncu -k "kernel" --list-page sass --page source python3 file.py</A>
 								<DT><H3 FOLDED>source-in-ptx</H3>
 								<DL><p>
 									<DT><A HREF="https://forums.developer.nvidia.com/t/how-to-see-ptx-cu-source-code/220043">How to see PTX/CU/source code? - Developer Tools / Nsight Compute - NVIDIA Developer Forums</A>
 									<DT><A HREF="https://docs.nvidia.com/cuda/pdf/CUDA_Compiler_Driver_NVCC.pdf">NVIDIA CUDA Compiler Driver Release 12.4</A>
 								</DL><p>
+								<DT><A HREF="https://docs.nvidia.com/cuda/ptx-writers-guide-to-interoperability/index.html">PTX Writers Guide to Interoperability</A>
+								<DT><A HREF="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-mma">matrix-multiply-accumulate (mma)</A>
+								<DT><A HREF="https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-ldmatrix">ldmatrix</A>
+								<DT><A HREF="https://github.com/openai/triton/blob/8a83b141fc832dfb83dac3f335b21f3efb888afd/python/triton/tools/compile.py#L18">triton: compile.py</A>
+								<DT><A HREF="https://segmentfault.com/a/1190000041878026/en">深度学习 - Practice torch.fx Part 1 - Pytorch-based Model Optimization Quantization Artifact - 个人文章 - SegmentFault 思否</A>
+								<DT><A HREF="https://segmentfault.com/a/1190000041878026/en">Practice torch.fx Part 1 - Pytorch-based Model Optimization</A>
+								<DT><A HREF="https://twitter.com/cis_female/status/1660390038226751490">microcode: ncu -k "kernel" --list-page sass --page source python3 file.py</A>
+							</DL><p>
+							<DT><H3 FOLDED>NVCC</H3>
+							<DL><p>
+								<DT><H3 FOLDED>NVVM IR</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/NVIDIA/cuda-samples/tree/master/Samples/7_libNVVM">cuda-samples/Samples/7_libNVVM at master · NVIDIA/cuda-samples</A>
+								</DL><p>
+								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html">CUDA NVCC</A>
+								<DT><A HREF="https://leimao.github.io/blog/CUDA-Compilation/">CUDA Compilation - Lei Mao's Log Book</A>
+							</DL><p>
+							<DT><H3 FOLDED>cubin</H3>
+							<DL><p>
+								<DT><A HREF="https://twitter.com/cHHillee/status/1779141387876962469">Triton kernels can be precompiled into .cubin files</A>
+							</DL><p>
+							<DT><H3 FOLDED>cudarc</H3>
+							<DL><p>
+								<DT><A HREF="https://github.com/akhildevelops/cudaz">akhildevelops/cudaz: A Zig Cuda wrapper</A>
+								<DT><A HREF="https://github.com/coreylowman/cudarc/tree/main">coreylowman/cudarc: Safe rust wrapper around CUDA toolkit</A>
+								<DT><A HREF="https://leimao.github.io/blog/Proper-CUDA-Error-Checking/">Proper CUDA Error Checking - Lei Mao's Log Book</A>
+							</DL><p>
+							<DT><H3 FOLDED>cuda-sass</H3>
+							<DL><p>
+								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html">1. Overview — cuda-binary-utilities (SaSS)</A>
+								<DT><A HREF="https://github.com/openai/triton/blob/8a83b141fc832dfb83dac3f335b21f3efb888afd/python/triton/tools/disasm.py#L69">triton: disasm.py#L69</A>
+							</DL><p>
+							<DT><H3 FOLDED>cuda-kernels</H3>
+							<DL><p>
+								<DT><H3 FOLDED>Apex</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/NVIDIA/apex">NVIDIA/apex: A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch</A>
+									<DT><A HREF="https://nvidia.github.io/apex/">Apex (A PyTorch Extension) — Apex 0.1.0 documentation</A>
+									<DT><A HREF="https://github.com/cat-state/tinypar">cat-state/tinypar</A>
+									<DT><A HREF="https://github.com/stas00/tinypar">stas00/tinypar: TP/PP/DP implementation of llama using apex blocks</A>
+									<DT><A HREF="https://github.com/cat-state/tinypar/blob/main/llama.py#L130">tinypar/llama.py at main · cat-state/tinypar</A>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-tensor-cores</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/tinygrad/tinygrad/discussions/4066">Tinygrad: CUDA Tensor Core Integration #2684</A>
+									<DT><A HREF="https://leimao.github.io/blog/NVIDIA-Tensor-Core-Programming/">NVIDIA Tensor Core Programming - Lei Mao's Log Book</A>
+									<DT><A HREF="https://github.com/jbaron34/torchwindow">jbaron34/torchwindow: Display tensors directly from GPU</A>
+								</DL><p>
+								<DT><A HREF="https://github.com/enp1s0/cutf">enp1s0/cutf: CUDA Template Functions</A>
+								<DT><A HREF="https://jhui.github.io/2017/03/06/CUDA/">“CUDA Tutorial”</A>
+								<DT><A HREF="https://github.com/mcarilli/cuda-memory/tree/master">mcarilli/cuda-memory: Playing around with GPU memory optimization</A>
+								<DT><A HREF="https://github.com/cuda-mode/triton-index">cuda-mode/triton-index: Cataloging released Triton kernels.</A>
+								<DT><A HREF="https://github.com/cuda-mode/triton-index/blob/main/kernel_overview.md">triton-index/kernel_overview.md</A>
+							</DL><p>
+							<DT><H3 FOLDED>cuda-graphs</H3>
+							<DL><p>
+								<DT><A HREF="https://developer.nvidia.com/blog/cuda-graphs/">Getting Started with CUDA Graphs | NVIDIA Technical Blog</A>
+								<DT><A HREF="https://pytorch.org/blog/accelerating-pytorch-with-cuda-graphs/">Accelerating PyTorch with CUDA Graphs | PyTorch</A>
+							</DL><p>
+							<DT><H3 FOLDED>cccl</H3>
+							<DL><p>
+								<DT><H3 FOLDED>llm.cpp</H3>
+								<DL><p>
+									<DT><A HREF="https://www.youtube.com/watch?v=WiB_3Csfj_Q">CUDA C++ llm.cpp - YouTube</A>
+								</DL><p>
+								<DT><H3 FOLDED>Thrust</H3>
+								<DL><p>
+									<DT><A HREF="https://docs.nvidia.com/cuda/thrust/index.html">Thrust</A>
+									<DT><A HREF="https://thrust.github.io/">Thrust - Parallel Algorithms Library</A>
+									<DT><A HREF="https://github.com/NVIDIA/thrust">NVIDIA/thrust: The C++ parallel algorithms library.</A>
+									<DT><H3 FOLDED>Fancy Iterators</H3>
+									<DL><p>
+									</DL><p>
+									<DT><A HREF="https://docs.nvidia.com/cuda/archive/12.0.0/pdf/Thrust_Quick_Start_Guide.pdf">Thrust_Quick_Start_Guide.pdf</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=zlJg9mCNfkQ">Thrust and the C++ Standard Algorithms - Conor Hoekstra - GTC 2021 - YouTube</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=W2tWOdzgXHA">GoingNative 2013 C++ Seasoning</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=h4Jl1fk3MkQ">CppCon 2016: Marshall Clow “STL Algorithms - why you should use them, and how to write your own" - YouTube</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=2olsGf6JIkU">CppCon 2018: Jonathan Boccara “105 STL Algorithms in Less Than an Hour” - YouTube</A>
+									<DT><A HREF="https://github.com/codereport/Content/tree/main/Talks">Content/Talks at main · codereport/Content</A>
+									<DT><A HREF="https://github.com/codereport/Content/tree/main/Talks/2021-04-GTC/ThrustAndTheCppStandardAlgorithms">Content/Talks/2021-04-GTC/ThrustAndTheCppStandardAlgorithms</A>
+									<DT><A HREF="https://research.nvidia.com/publication/2011-10_thrust-productivity-oriented-library-cuda">Thrust: A Productivity-Oriented Library for CUDA | Research</A>
+									<DT><A HREF="https://developer.nvidia.com/blog/expressive-algorithmic-programming-thrust/">Expressive Algorithmic Programming with Thrust | NVIDIA Technical Blog</A>
+								</DL><p>
+								<DT><A HREF="https://www.youtube.com/watch?v=WiB_3Csfj_Q">CUDA C++ llm.cpp - YouTube</A>
+								<DT><A HREF="https://github.com/NVIDIA/cccl">NVIDIA/cccl: CUDA C++ Core Libraries</A>
+								<DT><A HREF="https://github.com/eyalroz/cuda-api-wrappers">eyalroz/cuda-api-wrappers: Thin, unified, C++-flavored wrappers for the CUDA APIs</A>
+							</DL><p>
+							<DT><H3 FOLDED>cuda-python</H3>
+							<DL><p>
+								<DT><H3 FOLDED>pycuda</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/inducer/pycuda">inducer/pycuda: CUDA integration for Python, plus shiny features</A>
+									<DT><A HREF="https://documen.tician.de/pycuda/driver.html">Device Interface</A>
+									<DT><A HREF="https://forums.developer.nvidia.com/t/pycuda-best-practice-to-keep-c-kernels-separate-from-python-code/72829/4">load_kernels</A>
+								</DL><p>
+								<DT><A HREF="https://github.com/NVIDIA/cuda-python">NVIDIA/cuda-python: CUDA Python Low-level Bindings</A>
+								<DT><A HREF="https://github.com/inducer/pyopencl">inducer/pyopencl: OpenCL integration for Python, plus shiny features</A>
+								<DT><A HREF="https://github.com/MatthieuDartiailh/pyclibrary">MatthieuDartiailh/pyclibrary: C parser and ctypes automation for python</A>
+								<DT><A HREF="https://github.com/trolldbois/ctypeslib/blob/master/ctypeslib/clang2py.py">clang2py.py</A>
 							</DL><p>
 							<DT><H3 FOLDED>CUTLASS</H3>
 							<DL><p>
@@ -4667,183 +4780,11 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://dl.acm.org/doi/pdf/10.1145/3620666.3651369">EVT: Accelerating Deep Learning Training with Epilogue Visitor Tree</A>
 								<DT><A HREF="https://developer.nvidia.com/blog/cutlass-linear-algebra-cuda/">CUTLASS: Fast Linear Algebra in CUDA C++ | NVIDIA Technical Blog</A>
 							</DL><p>
-							<DT><H3 FOLDED>NVCC</H3>
+							<DT><H3 FOLDED>cuBLAS</H3>
 							<DL><p>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html">CUDA NVCC</A>
-								<DT><A HREF="https://leimao.github.io/blog/CUDA-Compilation/">CUDA Compilation - Lei Mao's Log Book</A>
-							</DL><p>
-							<DT><H3 FOLDED>NVVM IR</H3>
-							<DL><p>
-								<DT><A HREF="https://github.com/NVIDIA/cuda-samples/tree/master/Samples/7_libNVVM">cuda-samples/Samples/7_libNVVM at master · NVIDIA/cuda-samples</A>
-							</DL><p>
-							<DT><H3 FOLDED>Kernels</H3>
-							<DL><p>
-								<DT><H3 FOLDED>Apex</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/NVIDIA/apex">NVIDIA/apex: A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch</A>
-									<DT><A HREF="https://github.com/cat-state/tinypar">cat-state/tinypar</A>
-									<DT><A HREF="https://github.com/stas00/tinypar">stas00/tinypar: TP/PP/DP implementation of llama using apex blocks</A>
-								</DL><p>
-								<DT><A HREF="https://github.com/enp1s0/cutf">enp1s0/cutf: CUDA Template Functions</A>
-								<DT><A HREF="https://jhui.github.io/2017/03/06/CUDA/">“CUDA Tutorial”</A>
-								<DT><A HREF="https://github.com/mcarilli/cuda-memory/tree/master">mcarilli/cuda-memory: Playing around with GPU memory optimization</A>
-								<DT><H3 FOLDED>Tensor Cores</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/tinygrad/tinygrad/discussions/4066">Tinygrad: CUDA Tensor Core Integration #2684</A>
-									<DT><A HREF="https://leimao.github.io/blog/NVIDIA-Tensor-Core-Programming/">NVIDIA Tensor Core Programming - Lei Mao's Log Book</A>
-								</DL><p>
-							</DL><p>
-							<DT><H3 FOLDED>Graphs</H3>
-							<DL><p>
-								<DT><A HREF="https://developer.nvidia.com/blog/cuda-graphs/">Getting Started with CUDA Graphs | NVIDIA Technical Blog</A>
-								<DT><A HREF="https://pytorch.org/blog/accelerating-pytorch-with-cuda-graphs/">Accelerating PyTorch with CUDA Graphs | PyTorch</A>
-							</DL><p>
-							<DT><H3 FOLDED>Profiling</H3>
-							<DL><p>
-								<DT><H3 FOLDED>DrGPU: A Top-Down Profiler for GPU</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/FindHao/drgpu">FindHao/drgpu</A>
-									<DT><A HREF="https://about.findhao.net/ICPE2023.pdf">DrGPU: A Top-Down Profiler for GPU</A>
-									<DT><A HREF="https://github.com/FindHao/drgpu">FindHao/drgpu (Optimization suggestions)</A>
-									<DT><A HREF="https://chat.openai.com/c/74ad9a19-e6f0-4ba3-a0d7-0d7a0b6c5c61">Performance Logging &amp; Saving Kernel ASM &amp; IR</A>
-									<DT><A HREF="https://github.com/pytorch-labs/applied-ai/blob/de17730a993b1d2cce4fd09e3654b5f79fd23c96/kernels/triton/inference/gptq/a100_qlinear.py#L8">applied-ai/kernels/triton/inference/gptq/a100_qlinear.py (ASM &amp; IR)</A>
-								</DL><p>
-								<DT><H3 FOLDED>Nsight</H3>
-								<DL><p>
-									<DT><A HREF="https://gpuhackshef.readthedocs.io/en/latest/">Sheffield GPU Hackathon — GPUHackSheffield documentation</A>
-									<DT><A HREF="https://gpuhackshef.readthedocs.io/en/latest/tools/nvidia-profiling-tools.html">NVIDIA Profiling Tools — GPUHackSheffield documentation</A>
-									<DT><A HREF="https://docs.nvidia.com/nsight-systems/UserGuide/index.html">User Guide :: Nsight Systems Documentation</A>
-									<DT><A HREF="https://gist.github.com/mcarilli/376821aa1a7182dfcf59928a7cde3223">Favorite nsight systems profiling commands for Pytorch scripts</A>
-									<DT><A HREF="https://gist.github.com/mcarilli/213a4e698e4a0ae2234ddee56f4f3f95">Single- and multiprocess profiling workflow with nvprof and NVVP (Nsight Systems coming soon...)</A>
-									<DT><A HREF="https://www.youtube.com/watch?v=nhTjq0P9uc8">08 GPU Performance Analysis - YouTube</A>
-									<DT><A HREF="https://www.youtube.com/watch?v=fsC3QeZHM1U">Introduction to Kernel Performance Analysis with NVIDIA Nsight Compute - YouTube</A>
-									<DT><A HREF="https://www.olcf.ornl.gov/wp-content/uploads/2020/02/OLCF-Webinar-Nsight-Compute.pdf">https://www.olcf.ornl.gov/wp-content/uploads/2020/02/OLCF-Webinar-Nsight-Compute.pdf</A>
-									<DT><H3 FOLDED>High Pipe Utilization</H3>
-									<DL><p>
-									</DL><p>
-									<DT><H3 FOLDED>Issue Slot Utilization</H3>
-									<DL><p>
-									</DL><p>
-									<DT><H3 FOLDED>CPI Stall ‘Long Scoreboard’</H3>
-									<DL><p>
-									</DL><p>
-									<DT><H3 FOLDED>videos</H3>
-									<DL><p>
-										<DT><A HREF="https://www.youtube.com/watch?v=GCkdiHk6fUY">Memory Analysis with NVIDIA Nsight Compute (memory chart)</A>
-										<DT><A HREF="https://www.youtube.com/watch?v=uHN5fpfu8As">Memory hierarchy</A>
-										<DT><A HREF="https://www.youtube.com/watch?v=Iuy_RAvguBM">Intro to NVIDIA Nsight Compute</A>
-										<DT><A HREF="https://www.youtube.com/watch?v=nhTjq0P9uc8">08 GPU Performance Analysis</A>
-										<DT><A HREF="https://www.youtube.com/watch?v=fsC3QeZHM1U">Introduction to Kernel Performance Analysis with NVIDIA Nsight Compute</A>
-										<DT><A HREF="https://www.youtube.com/watch?v=3DAYN-onSzY">GPU Series: Hands-On Session with NSight Systems and Compute - YouTube</A>
-									</DL><p>
-									<DT><A HREF="https://blog.speechmatics.com/pointless-gpu-optimization-exercise">An Almost Pointless Exercise in GPU Optimization</A>
-									<DT><A HREF="https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#memory-tables">Memory tables Profiling Guide</A>
-									<DT><A HREF="https://github.com/NVIDIA/nsight-training/tree/master/cuda/nsight_compute/vlog_memory_workload">nsight-training/cuda/nsight_compute/vlog_memory_workload</A>
-									<DT><A HREF="https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html">2. Kernel Profiling Guide — NsightCompute 12.4 documentation</A>
-									<DT><A HREF="https://github.com/NVIDIA/nsight-training/blob/master/cuda/nsight_compute/vlog_memory_workload/README.md">nsight-training/cuda/nsight_compute/vlog_memory_workload/README.md at master · NVIDIA/nsight-training</A>
-								</DL><p>
-								<DT><H3 FOLDED>(NVML) NVIDIA Management Library</H3>
-								<DL><p>
-									<DT><A HREF="https://docs.nvidia.com/deploy/nvml-api/group__nvmlDeviceQueries.html">NVML API Reference Guide :: GPU Deployment and Management Documentation</A>
-								</DL><p>
-								<DT><H3 FOLDED>nvprof</H3>
-								<DL><p>
-									<DT><A HREF="https://docs.nvidia.com/cuda/profiler-users-guide/">nvprof: Profiler Users Guide</A>
-								</DL><p>
-								<DT><H3 FOLDED>TensorBoard</H3>
-								<DL><p>
-									<DT><A HREF="https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras">TensorFlow Profiler: Profile model performance  |  TensorBoard</A>
-									<DT><A HREF="https://github.com/pytorch/kineto/blob/main/tb_plugin/docs/gpu_utilization.md">pytorch gpu_utilization.md</A>
-									<DT><A HREF="https://github.com/pytorch/kineto/tree/main/tb_plugin">tb_plugin</A>
-									<DT><A HREF="https://pytorch.org/tutorials/intermediate/tensorboard_profiler_tutorial.html">PyTorch Profiler With TensorBoard — PyTorch Tutorials 2.0.1+cu117 documentation</A>
-									<DT><A HREF="https://github.com/LaurentMazare/tboard-rs">LaurentMazare/tboard-rs: Read and write tensorboard data using Rust</A>
-								</DL><p>
-								<DT><A HREF="https://www.tensorflow.org/tensorboard/tensorboard_profiling_keras">TensorFlow Profiler: Profile model performance  |  TensorBoard</A>
-								<DT><A HREF="https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html">GPU Performance Background User's Guide - NVIDIA Docs</A>
-								<DT><A HREF="https://matplotlib.org/stable/gallery/lines_bars_and_markers/step_demo.html#sphx-glr-gallery-lines-bars-and-markers-step-demo-py">Step Demo — Matplotlib 3.7.2 documentation</A>
-								<DT><A HREF="https://github.com/vllm-project/vllm/blob/main/benchmarks/benchmark_latency.py">vllm/benchmarks/benchmark_latency.py at main · vllm-project/vllm</A>
-								<DT><A HREF="https://github.com/Kobzol/hardware-effects-gpu">Kobzol/hardware-effects-gpu: Demonstration of various hardware effects on CUDA GPUs.</A>
-								<DT><A HREF="https://github.com/Kobzol/hardware-effects-gpu/tree/master/memory-coalescing">hardware-effects-gpu/memory-coalescing at master · Kobzol/hardware-effects-gpu</A>
-								<DT><A HREF="https://github.com/mcarilli/cuda-memory/tree/master">mcarilli/cuda-memory: Playing around with GPU memory optimization</A>
-								<DT><A HREF="https://github.com/cupy/cupy/blob/5a4c7a1c461776c779afc1e614aa06db7be594fa/docs/source/user_guide/performance.rst#L10">Performance Best Practices: CuPy</A>
-								<DT><A HREF="https://github.com/Lin-Mao/DrGPUM">Lin-Mao/DrGPUM: A memory profiler for NVIDIA GPUs to explore memory inefficiencies in GPU-accelerated applications.</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=LuhJEEJQgUM">Lecture 1 How to profile CUDA kernels in PyTorch - YouTube</A>
-								<DT><A HREF="https://docs.google.com/presentation/d/110dnMW94LX1ySWxu9La17AVUxjgSaQDLOotFC3BZZD4/edit#slide=id.p">Lecture 1 How to profile CUDA kernels in PyTorch</A>
-								<DT><A HREF="https://www.speechmatics.com/company/articles-and-news/timing-operations-in-pytorch">How to Accurately Time CUDA Kernels in Pytorch</A>
-								<DT><A HREF="https://developer.nvidia.com/tools-overview">NVIDIA Developer Tools Overview | NVIDIA Developer</A>
-								<DT><A HREF="https://developer.nvidia.com/nsight-visual-studio-code-edition">Nsight Visual Studio Code Edition</A>
-								<DT><A HREF="https://developer.nvidia.com/nsight-dl-designer">Nsight Deep Learning Designer (earlier access)</A>
-								<DT><A HREF="https://github.com/vllm-project/vllm/blob/main/benchmarks/benchmark_latency.py">vllm/benchmarks/benchmark_latency.py at main</A>
-								<DT><A HREF="https://github.com/Kobzol/hardware-effects-gpu/tree/master/memory-coalescing">hardware-effects-gpu/memory-coalescing at master</A>
-								<DT><A HREF="https://github.com/Lin-Mao/DrGPUM">Lin-Mao/DrGPUM: A memory profiler for NVIDIA GPUs to explore memory inefficiencies in GPU</A>
-								<DT><A HREF="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-143.pdf">Understanding Latency Hiding on GPUs (2016)</A>
-								<DT><A HREF="https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/">Using CUDA Warp-Level Primitives</A>
-							</DL><p>
-							<DT><H3 FOLDED>MicroBenchmarking</H3>
-							<DL><p>
-								<DT><A HREF="https://arxiv.org/pdf/1903.07486.pdf">Dissecting the NVidia Turing T4 GPU via Microbenchmarking</A>
-								<DT><A HREF="https://arxiv.org/pdf/1912.03413.pdf">IPU</A>
-								<DT><A HREF="https://arxiv.org/pdf/1804.06826.pdf%5B/url%5D">Volta</A>
-							</DL><p>
-							<DT><H3 FOLDED>Error Correction Code (ECC)</H3>
-							<DL><p>
-							</DL><p>
-							<DT><H3 FOLDED>MGI</H3>
-							<DL><p>
-								<DT><A HREF="https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html">NVIDIA Multi-Instance GPU User Guide :: NVIDIA Tesla Documentation</A>
-								<DT><A HREF="https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/">Getting the Most Out of the NVIDIA A100 GPU with Multi-Instance GPU | NVIDIA Technical Blog</A>
-								<DT><A HREF="https://pytorch.org/docs/stable/cuda.html">torch.cuda — PyTorch 1.13 documentation</A>
-								<DT><A HREF="https://discuss.pytorch.org/t/access-gpu-partitions-in-mig/142272">Access GPU partitions in MIG - PyTorch Forums</A>
-							</DL><p>
-							<DT><H3 FOLDED>Reproducibility</H3>
-							<DL><p>
-								<DT><A HREF="https://pytorch.org/docs/stable/notes/randomness.html">Reproducibility — PyTorch 1.13 documentation</A>
-								<DT><A HREF="https://vandurajan91.medium.com/random-seeds-and-reproducible-results-in-pytorch-211620301eba">Random seeds and reproducible results in PyTorch | by Vandana Rajan | Medium</A>
-								<DT><A HREF="https://developer.nvidia.com/deep-learning-performance-training-inference">Reproducible Performance</A>
-							</DL><p>
-							<DT><H3 FOLDED>Thrust</H3>
-							<DL><p>
-								<DT><A HREF="https://docs.nvidia.com/cuda/thrust/index.html">Thrust</A>
-								<DT><A HREF="https://thrust.github.io/">Thrust - Parallel Algorithms Library</A>
-								<DT><A HREF="https://github.com/NVIDIA/thrust">NVIDIA/thrust: The C++ parallel algorithms library.</A>
-								<DT><H3 FOLDED>Fancy Iterators</H3>
-								<DL><p>
-								</DL><p>
-								<DT><A HREF="https://docs.nvidia.com/cuda/archive/12.0.0/pdf/Thrust_Quick_Start_Guide.pdf">Thrust_Quick_Start_Guide.pdf</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=zlJg9mCNfkQ">Thrust and the C++ Standard Algorithms - Conor Hoekstra - GTC 2021 - YouTube</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=W2tWOdzgXHA">GoingNative 2013 C++ Seasoning</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=h4Jl1fk3MkQ">CppCon 2016: Marshall Clow “STL Algorithms - why you should use them, and how to write your own" - YouTube</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=2olsGf6JIkU">CppCon 2018: Jonathan Boccara “105 STL Algorithms in Less Than an Hour” - YouTube</A>
-								<DT><A HREF="https://github.com/codereport/Content/tree/main/Talks">Content/Talks at main · codereport/Content</A>
-								<DT><A HREF="https://github.com/codereport/Content/tree/main/Talks/2021-04-GTC/ThrustAndTheCppStandardAlgorithms">Content/Talks/2021-04-GTC/ThrustAndTheCppStandardAlgorithms</A>
-								<DT><A HREF="https://research.nvidia.com/publication/2011-10_thrust-productivity-oriented-library-cuda">Thrust: A Productivity-Oriented Library for CUDA | Research</A>
-								<DT><A HREF="https://developer.nvidia.com/blog/expressive-algorithmic-programming-thrust/">Expressive Algorithmic Programming with Thrust | NVIDIA Technical Blog</A>
-							</DL><p>
-							<DT><H3 FOLDED>GPUDirect</H3>
-							<DL><p>
-								<DT><A HREF="https://github.com/NVIDIA/gds-nvidia-fs">NVIDIA/gds-nvidia-fs: NVIDIA GPUDirect Storage Driver</A>
-								<DT><A HREF="https://developer.nvidia.com/blog/gpudirect-storage/">GPUDirect Storage: A Direct Path Between Storage and GPU Memory</A>
-								<DT><A HREF="https://arxiv.org/pdf/2203.04910.pdf?">GPU-Initiated On-Demand High-Throughput Storage Access in the BaM System Architecture</A>
-								<DT><A HREF="https://on-demand.gputechconf.com/supercomputing/2019/pdf/sc1922-gpudirect-storage-transfer-data-directly-to-gpu-memory-alleviating-io-bottlenecks.pdf">GPUDIRECT STORAGE:A DIRECT GPU-STORAGE DATA PATH</A>
-								<DT><A HREF="https://www.snia-j.org/cmm/images/2022/10/3-1NVIDIA.pdf">NVIDIA GPUDirect Storage</A>
-								<DT><A HREF="https://github.com/michaelbe2/write_to_gpu">michaelbe2/write_to_gpu: Using RC or DC with new post send APIs</A>
-								<DT><A HREF="https://github.com/alpa-projects/alpa/blob/main/examples/llm_serving/scripts/step_3_convert_to_numpy_weights.py">alpa/examples/llm_serving/scripts/step_3_convert_to_numpy_weights.py at main · alpa-projects/alpa</A>
-								<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/o-direct-guide/index.html">NVIDIA GPUDirect Storage O_DIRECT Requirements Guide - NVIDIA Docs</A>
-								<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/best-practices-guide/index.html">NVIDIA GPUDirect Storage Best Practices Guide - NVIDIA Docs</A>
-								<DT><A HREF="https://medium.com/@kaiyongx2/quick-guide-to-gpudirect-storage-gds-592037bdc046">Learning Nvidia GPUDirect. Impetus of Using GPUDirect Storage | by KY | Medium</A>
-								<DT><A HREF="https://chat.openai.com/c/61bb588b-35a7-42a6-90e9-c2355e5646a9">Identify Disk Storage Type</A>
-								<DT><H3 FOLDED>installation, uninstallation, configuration information</H3>
-								<DL><p>
-									<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/troubleshooting-guide/index.html">NVIDIA GPUDirect Storage Installation and Troubleshooting Guide - NVIDIA Docs</A>
-									<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/troubleshooting-guide/index.html#mofed-req-install">NVIDIA GPUDirect Storage Installation and Troubleshooting Guide - NVIDIA Docs</A>
-									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv531001">NVIDIA MLNX_OFED Documentation Rev 5.3-1.0.0.1 - NVIDIA Docs</A>
-									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv461000/downloading+mellanox+ofed">Downloading Mellanox OFED - NVIDIA Docs</A>
-									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv461000/general+support+in+mlnx_ofed">General Support in MLNX_OFED - NVIDIA Docs</A>
-									<DT><A HREF="https://network.nvidia.com/products/infiniband-drivers/linux/mlnx_ofed/">Linux InfiniBand Drivers</A>
-									<DT><A HREF="https://ubuntu.com/server/docs/nvidia-drivers-installation">NVIDIA drivers installation | Ubuntu</A>
-									<DT><A HREF="https://github.com/developer-onizuka/gpudirect_storage">developer-onizuka/gpudirect_storage (global view)</A>
-								</DL><p>
-								<DT><A HREF="https://man7.org/linux/man-pages/man8/lsblk.8.html">lsblk(8) - Linux manual page</A>
+								<DT><A HREF="https://siboehm.com/articles/22/CUDA-MMM">How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog (main)</A>
+								<DT><A HREF="https://github.com/wangzyon/NVIDIA_SGEMM_PRACTICE">wangzyon/NVIDIA_SGEMM_PRACTICE: Step-by-step optimization of CUDA SGEMM</A>
+								<DT><A HREF="https://github.com/Bruce-Lee-LY/cuda_hgemm">Bruce-Lee-LY/cuda_hgemm: Several optimization methods of half-precision general matrix multiplication (HGEMM) using tensor core with WMMA API and MMA PTX instruction.</A>
 							</DL><p>
 							<DT><H3 FOLDED>NCCL</H3>
 							<DL><p>
@@ -4862,209 +4803,6 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=nD6PUe3d6ec">Lecture #2 - Scatter-to-Gather Transformation - YouTube</A>
 								<DT><A HREF="https://github.com/cuda-mode/p2p-perf">cuda-mode/p2p-perf: measuring peer-to-peer (p2p) transfer on different cuda devices</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=T22e3fgit-A">Lecture 17: NCCL - YouTube</A>
-							</DL><p>
-							<DT><H3 FOLDED>driver</H3>
-							<DL><p>
-								<DT><A HREF="https://ubuntu.com/server/docs/nvidia-drivers-installation">NVIDIA drivers installation | Ubuntu</A>
-								<DT><A HREF="https://docs.nvidia.com/datacenter/tesla/index.html">NVIDIA Data Center GPU Driver Documentation</A>
-								<DT><A HREF="https://download.nvidia.com/XFree86/Linux-x86_64/470.223.02/README/">NVIDIA Accelerated Linux Graphics Driver README and Installation Guide</A>
-								<DT><A HREF="https://linux.die.net/man/8/modprobe">modprobe(8): add/remove modules from Kernel - Linux man page</A>
-								<DT><A HREF="https://github.com/tinygrad/open-gpu-kernel-modules">tinygrad/open-gpu-kernel-modules: NVIDIA Linux open GPU with P2P support</A>
-								<DT><A HREF="https://github.com/pytorch/pytorch/blob/acc466751b2723eb913fd3148b4f054189bbf1ab/.devcontainer/README.md">pytorch/.devcontainer/README.md: NVIDIA Container Toolkit for GPU Usage</A>
-							</DL><p>
-							<DT><H3 FOLDED>installation</H3>
-							<DL><p>
-								<DT><A HREF="https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation">cuda - How to verify CuDNN installation</A>
-								<DT><A HREF="https://nvidia.github.io/cuda-python/install.html">Installation - CUDA Python 12.1.0 documentation</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/archive/10.2/cuda-installation-guide-linux/index.html">nvcc</A>
-								<DT><A HREF="https://developer.download.nvidia.com/compute/cuda/redist/">Index of /compute/cuda/redist</A>
-								<DT><A HREF="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/">Index of /compute/cuda/repos/ubuntu2204</A>
-								<DT><H3 FOLDED>symlinks &amp; /etc/alternatives</H3>
-								<DL><p>
-									<DT><A HREF="https://chat.openai.com/c/21c4fe05-b3de-4a20-b96c-6d5c1bc7bea4">update_alternatives: multiple cuda installations</A>
-								</DL><p>
-								<DT><A HREF="https://chat.openai.com/c/21c4fe05-b3de-4a20-b96c-6d5c1bc7bea4">CUDA_HOME</A>
-								<DT><A HREF="https://faculty.cc.gatech.edu/~hyesoon/spr09/installcuda.html">https://faculty.cc.gatech.edu/~hyesoon/spr09/installcuda.html</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/">CUDA Installation Guide for Linux</A>
-							</DL><p>
-							<DT><A HREF="https://developer.nvidia.com/deep-learning-performance-training-inference">Reproducible Performance</A>
-							<DT><A HREF="https://catalog.ngc.nvidia.com/collections">Collections - Use-Case Based AI Software Packages | NVIDIA NGC</A>
-							<DT><A HREF="https://forums.fast.ai/t/clearing-gpu-memory-pytorch/14637">Clearing GPU Memory - PyTorch - Part 1 (2018) / Beginner (2018) - Deep Learning Course Forums</A>
-							<DT><A HREF="https://discuss.pytorch.org/t/why-moving-model-and-tensors-to-gpu/41498">Moving memory from CPU-RAM to GPU VRAM</A>
-							<DT><A HREF="https://www.programcreek.com/python/?CodeExample=clear+memory">Python clear memory</A>
-							<DT><A HREF="https://groups.google.com/a/anaconda.com/g/numba-users/c/7jkf-X_U7B8">Best way to clean up GPU memory</A>
-							<DT><A HREF="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__MEMORY.html#group__CUDART__MEMORY_1ga042655cbbf3408f01061652a075e094">CUDA Runtime API :: CUDA Toolkit Documentation</A>
-							<DT><A HREF="https://docs.nvidia.com/deeplearning/cudnn/developer-guide/index.html">cuDNN Documentation</A>
-							<DT><A HREF="https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation">cuda - How to verify CuDNN installation</A>
-							<DT><A HREF="https://nvidia.github.io/cuda-python/install.html">Installation - CUDA Python 12.1.0 documentation</A>
-							<DT><A HREF="https://twitter.com/marius/status/1657530968801181696/photo/1">GPU Computing</A>
-							<DT><A HREF="https://pytorch.org/docs/stable/notes/cuda.html#cuda-semantics">CUDA semantics — PyTorch 2.0 documentation</A>
-							<DT><A HREF="https://www.youtube.com/watch?v=QQceTDjA4f4">GTC 2022 - How CUDA Programming Works - Stephen Jones, CUDA Architect, NVIDIA - YouTube</A>
-							<DT><A HREF="https://www.youtube.com/watch?v=-J8YyfrSwTk">Effective ML - YouTube</A>
-							<DT><A HREF="https://github.com/enp1s0/cutf">enp1s0/cutf: CUDA Template Functions</A>
-							<DT><A HREF="https://jhui.github.io/2017/03/06/CUDA/">“CUDA Tutorial”</A>
-							<DT><A HREF="https://arxiv.org/pdf/1903.07486.pdf">https://arxiv.org/pdf/1903.07486.pdf</A>
-							<DT><A HREF="https://arxiv.org/abs/1903.07486">[1903.07486] Dissecting the NVidia Turing T4 GPU via Microbenchmarking</A>
-							<DT><A HREF="https://gist.github.com/mcarilli">mcarilli’s gists</A>
-							<DT><A HREF="https://futhark-lang.org/">Why Futhark?</A>
-							<DT><A HREF="https://www.youtube.com/watch?v=q38V66bqhfU">EfficientML.ai lecture - YouTube</A>
-							<DT><A HREF="https://github.com/coreylowman/cudarc">coreylowman/cudarc: Safe rust wrapper around CUDA toolkit</A>
-							<DT><A HREF="https://research.colfax-intl.com/adding-fp8-to-flashattention/">Delivering 1 PFLOP/s of Performance with FP8 FlashAttention-2 – Colfax Research</A>
-							<DT><H3 FOLDED>cubin</H3>
-							<DL><p>
-								<DT><A HREF="https://twitter.com/cHHillee/status/1779141387876962469">Triton kernels can be precompiled into .cubin files</A>
-							</DL><p>
-							<DT><H3 FOLDED>cuda-python</H3>
-							<DL><p>
-								<DT><H3 FOLDED>pycuda</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/inducer/pycuda">inducer/pycuda: CUDA integration for Python, plus shiny features</A>
-									<DT><A HREF="https://documen.tician.de/pycuda/driver.html">Device Interface</A>
-									<DT><A HREF="https://forums.developer.nvidia.com/t/pycuda-best-practice-to-keep-c-kernels-separate-from-python-code/72829/4">load_kernels</A>
-								</DL><p>
-								<DT><A HREF="https://github.com/NVIDIA/cuda-python">NVIDIA/cuda-python: CUDA Python Low-level Bindings</A>
-								<DT><A HREF="https://github.com/inducer/pyopencl">inducer/pyopencl: OpenCL integration for Python, plus shiny features</A>
-								<DT><A HREF="https://github.com/MatthieuDartiailh/pyclibrary">MatthieuDartiailh/pyclibrary: C parser and ctypes automation for python</A>
-								<DT><A HREF="https://github.com/trolldbois/ctypeslib/blob/master/ctypeslib/clang2py.py">clang2py.py</A>
-							</DL><p>
-							<DT><H3 FOLDED>Tensor Cores</H3>
-							<DL><p>
-								<DT><A HREF="https://github.com/tinygrad/tinygrad/discussions/4066">Tinygrad: CUDA Tensor Core Integration #2684</A>
-							</DL><p>
-							<DT><H3 FOLDED>learning</H3>
-							<DL><p>
-								<DT><H3 FOLDED>PMPP</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/drisspg/simple_cuda">drisspg/simple_cuda: Learnings + Exercises from the PMPP book!</A>
-									<DT><A HREF="https://github.com/olcf/cuda-training-series">olcf/cuda-training-series: Training materials associated with NVIDIA's CUDA Training Series (www.olcf.ornl.gov/cuda-training-series/)</A>
-									<DT><A HREF="https://www.amazon.es/Programming-Massively-Parallel-Processors-Hands/dp/0323912311">Programming Massively Parallel Processors: A Hands-on Approach : Hwu, Wen-mei W., Kirk, David B., El Hajj, Izzat: Amazon.es: Libros</A>
-									<DT><A HREF="https://shop.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0">Programming Massively Parallel Processors - 4th Edition | Elsevier Shop</A>
-									<DT><A HREF="http://gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf">‎gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf</A>
-								</DL><p>
-								<DT><A HREF="https://ahgamut.github.io/">Blog Needs a Name</A>
-								<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_OwkTgEyA6tk3UsoPBH737">Livestream - P&amp;S Hands-on Acceleration on Heterogeneous Computing Systems (Fall 2021) - YouTube</A>
-								<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi-Mnk1PxjEIG32HAGILkTOF">Livestream - Computer Architecture - ETH Zürich (Fall 2021) - YouTube</A>
-							</DL><p>
-							<DT><H3 FOLDED>cudarc</H3>
-							<DL><p>
-								<DT><A HREF="https://github.com/akhildevelops/cudaz">akhildevelops/cudaz: A Zig Cuda wrapper</A>
-								<DT><A HREF="https://github.com/coreylowman/cudarc/tree/main">coreylowman/cudarc: Safe rust wrapper around CUDA toolkit</A>
-								<DT><A HREF="https://leimao.github.io/blog/Proper-CUDA-Error-Checking/">Proper CUDA Error Checking - Lei Mao's Log Book</A>
-							</DL><p>
-							<DT><H3 FOLDED>cuBLAS</H3>
-							<DL><p>
-								<DT><A HREF="https://siboehm.com/articles/22/CUDA-MMM">How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog (main)</A>
-								<DT><A HREF="https://github.com/wangzyon/NVIDIA_SGEMM_PRACTICE">wangzyon/NVIDIA_SGEMM_PRACTICE: Step-by-step optimization of CUDA SGEMM</A>
-								<DT><A HREF="https://github.com/Bruce-Lee-LY/cuda_hgemm">Bruce-Lee-LY/cuda_hgemm: Several optimization methods of half-precision general matrix multiplication (HGEMM) using tensor core with WMMA API and MMA PTX instruction.</A>
-							</DL><p>
-							<DT><H3 FOLDED>cccl</H3>
-							<DL><p>
-								<DT><H3 FOLDED>llm.cpp</H3>
-								<DL><p>
-									<DT><A HREF="https://www.youtube.com/watch?v=WiB_3Csfj_Q">CUDA C++ llm.cpp - YouTube</A>
-								</DL><p>
-								<DT><A HREF="https://www.youtube.com/watch?v=WiB_3Csfj_Q">CUDA C++ llm.cpp - YouTube</A>
-								<DT><A HREF="https://github.com/NVIDIA/cccl">NVIDIA/cccl: CUDA C++ Core Libraries</A>
-								<DT><A HREF="https://github.com/eyalroz/cuda-api-wrappers">eyalroz/cuda-api-wrappers: Thin, unified, C++-flavored wrappers for the CUDA APIs</A>
-							</DL><p>
-							<DT><H3 FOLDED>cupy</H3>
-							<DL><p>
-							</DL><p>
-							<DT><H3 FOLDED>Sharing</H3>
-							<DL><p>
-								<DT><H3 FOLDED>Multi-Process Service (MPS)</H3>
-								<DL><p>
-									<DT><A HREF="https://www.olcf.ornl.gov/wp-content/uploads/2021/06/MPS_ORNL_20210817.pdf">Introduction (slides)</A>
-								</DL><p>
-							</DL><p>
-							<DT><H3 FOLDED>people</H3>
-							<DL><p>
-								<DT><A HREF="https://github.com/wangzyon">wangzyon (Wang Zhiyong)</A>
-								<DT><A HREF="https://www.youtube.com/@OnurMutluLectures/videos">Onur Mutlu Lectures - YouTube</A>
-								<DT><A HREF="https://siboehm.com/">siboehm</A>
-								<DT><A HREF="https://leimao.github.io/tags/CUDA/">Tag: CUDA - Lei Mao's Log Book</A>
-							</DL><p>
-							<DT><A HREF="https://forums.fast.ai/t/clearing-gpu-memory-pytorch/14637">Clearing GPU Memory</A>
-							<DT><A HREF="https://github.com/microsoft/onnxruntime/tree/main/onnxruntime/core/providers/cuda">onnxruntime/onnxruntime/core/providers/cuda at main</A>
-							<DT><H3 FOLDED>cuda-programming-model</H3>
-							<DL><p>
-								<DT><H3 FOLDED>Memory Model</H3>
-								<DL><p>
-									<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#memory-hierarchy">Memory Hierarchy</A>
-									<DT><A HREF="https://www.youtube.com/watch?v=uHN5fpfu8As">Memory hierarchy</A>
-									<DT><A HREF="https://developer.nvidia.com/gtc/2020/video/cwe21754">GTC 2020: Memory Management on Modern GPU | NVIDIA Developer</A>
-									<DT><A HREF="https://developer.download.nvidia.com/video/gputechconf/gtc/2020/presentations/s21819-optimizing-applications-for-nvidia-ampere-gpu-architecture.pdf">GPU memory architecture</A>
-									<DT><A HREF="https://developer.download.nvidia.com/CUDA/training/register_spilling.pdf">Local memory/register spilling</A>
-									<DT><A HREF="https://lwn.net/Articles/253361/">Memory part 3: Virtual Memory [LWN.net]</A>
-								</DL><p>
-								<DT><H3 FOLDED>Thread Divergence</H3>
-								<DL><p>
-									<DT><A HREF="https://www.youtube.com/watch?v=95fFNzV4sd0">Parallel C++: Thread Affinity - YouTube</A>
-								</DL><p>
-								<DT><H3 FOLDED>branchless computing</H3>
-								<DL><p>
-								</DL><p>
-								<DT><A HREF="https://github.com/IonThruster/CudaTutorials/blob/master/strategy.md">CudaTutorials/strategy.md</A>
-								<DT><A HREF="https://www.olcf.ornl.gov/calendar/cuda-shared-memory/">CUDA Shared Memory – Oak Ridge Leadership Computing Facility</A>
-								<DT><A HREF="https://www.olcf.ornl.gov/cuda-training-series/">CUDA Training Series – Oak Ridge Leadership Computing Facility</A>
-								<DT><A HREF="https://github.com/olcf/cuda-training-series">olcf/cuda-training-series: Training materials associated with NVIDIA's CUDA Training Series (www.olcf.ornl.gov/cuda-training-series/)</A>
-								<DT><A HREF="https://github.com/NVIDIA/multi-gpu-programming-models">NVIDIA/multi-gpu-programming-models: Examples demonstrating available options to program multiple GPUs in a single node or a cluster</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-programming-guide/">1. Introduction — CUDA C Programming Guide</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=KHa-OSrZPGo">CppCon 2016: “Bringing Clang and C++ to GPUs: An Open-Source, CUDA-Compatible GPU C++ Compiler" - YouTube</A>
-								<DT><A HREF="https://tripack45.github.io/2019/10/20/intern2019/">Parallelism on Its Own Feet: 90 Days as an NVidia Intern | Patricium</A>
-								<DT><A HREF="https://github.com/NVIDIA/cutlass/blob/main/media/docs/cute/00_quickstart.md">cutlass/media/docs/cute/00_quickstart.md at main · NVIDIA/cutlass</A>
-								<DT><A HREF="https://github.com/NVIDIA/cuda-samples">NVIDIA/cuda-samples: Samples for CUDA Developers which demonstrates features in CUDA Toolkit</A>
-								<DT><A HREF="https://github.com/Tony-Tan/CUDA_Freshman">Tony-Tan/CUDA_Freshman</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=cXpTDKjjKZE">03 CUDA Fundamental Optimization Part 1 - YouTube</A>
-								<DT><A HREF="https://github.com/cuda-mode/lecture2">cuda-mode/lecture2: lecture 2 - 2024-01-20</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=NQ-0D5Ti2dc">Lecture 2 Ch1-3 PMPP book</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=OSpy-HoR0ac">Intro to CUDA (part 5): Memory Model - YouTube</A>
-								<DT><A HREF="https://github.com/torstem/demo-cuda-pybind11">demo-cuda-pybind11</A>
-								<DT><A HREF="https://github.com/cuda-mode/resource-stream">cuda-mode/resource-stream: CUDA related news and material links</A>
-								<DT><A HREF="https://github.com/cuda-mode/lectures">cuda-mode/lectures: Material for cuda-mode lectures</A>
-								<DT><A HREF="https://www.youtube.com/watch?v=u70a9ssZnjI&list=LL&index=17">George Hotz | Programming | cherry computer: no more superscalar? the thneed lesson - YouTube</A>
-								<DT><A HREF="https://blog.speechmatics.com/pointless-gpu-optimization-exercise">An Almost Pointless Exercise in GPU Optimization</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html">CUDA C++ Programming Guide</A>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/">CUDA C++ Best Practices Guide</A>
-								<DT><A HREF="https://github.com/NVIDIA/multi-gpu-programming-models">NVIDIA/multi-gpu-programming-models: Examples demonstrating available options to program multiple GPUs</A>
-								<DT><A HREF="https://leimao.github.io/blog/Row-Major-VS-Column-Major/">Row-Major VS Column-Major - Lei Mao's Log Book</A>
-							</DL><p>
-							<DT><H3 FOLDED>sass</H3>
-							<DL><p>
-								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-binary-utilities/index.html">1. Overview — cuda-binary-utilities (SaSS)</A>
-								<DT><A HREF="https://github.com/openai/triton/blob/8a83b141fc832dfb83dac3f335b21f3efb888afd/python/triton/tools/disasm.py#L69">triton: disasm.py#L69</A>
-							</DL><p>
-							<DT><H3 FOLDED>cuda-kernels</H3>
-							<DL><p>
-								<DT><H3 FOLDED>Apex</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/NVIDIA/apex">NVIDIA/apex: A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch</A>
-									<DT><A HREF="https://nvidia.github.io/apex/">Apex (A PyTorch Extension) — Apex 0.1.0 documentation</A>
-									<DT><A HREF="https://github.com/cat-state/tinypar">cat-state/tinypar</A>
-									<DT><A HREF="https://github.com/stas00/tinypar">stas00/tinypar: TP/PP/DP implementation of llama using apex blocks</A>
-									<DT><A HREF="https://github.com/cat-state/tinypar/blob/main/llama.py#L130">tinypar/llama.py at main · cat-state/tinypar</A>
-								</DL><p>
-								<DT><H3 FOLDED>cuda-tensor-cores</H3>
-								<DL><p>
-									<DT><A HREF="https://github.com/tinygrad/tinygrad/discussions/4066">Tinygrad: CUDA Tensor Core Integration #2684</A>
-									<DT><A HREF="https://leimao.github.io/blog/NVIDIA-Tensor-Core-Programming/">NVIDIA Tensor Core Programming - Lei Mao's Log Book</A>
-									<DT><A HREF="https://github.com/jbaron34/torchwindow">jbaron34/torchwindow: Display tensors directly from GPU</A>
-								</DL><p>
-								<DT><A HREF="https://github.com/enp1s0/cutf">enp1s0/cutf: CUDA Template Functions</A>
-								<DT><A HREF="https://jhui.github.io/2017/03/06/CUDA/">“CUDA Tutorial”</A>
-								<DT><A HREF="https://github.com/mcarilli/cuda-memory/tree/master">mcarilli/cuda-memory: Playing around with GPU memory optimization</A>
-								<DT><A HREF="https://github.com/cuda-mode/triton-index">cuda-mode/triton-index: Cataloging released Triton kernels.</A>
-								<DT><A HREF="https://github.com/cuda-mode/triton-index/blob/main/kernel_overview.md">triton-index/kernel_overview.md</A>
-							</DL><p>
-							<DT><H3 FOLDED>cuda-array-interface</H3>
-							<DL><p>
-								<DT><A HREF="https://numba.readthedocs.io/en/stable/cuda/cuda_array_interface.html">CUDA Array Interface (Version 3) — Numba 0+untagged.2155.g9ce83ef.dirty documentation</A>
-								<DT><A HREF="https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.interface.html#__array_interface__">The Array Interface — NumPy v1.13 Manual</A>
-							</DL><p>
-							<DT><H3 FOLDED>cuda-graphs</H3>
-							<DL><p>
-								<DT><A HREF="https://developer.nvidia.com/blog/cuda-graphs/">Getting Started with CUDA Graphs | NVIDIA Technical Blog</A>
-								<DT><A HREF="https://pytorch.org/blog/accelerating-pytorch-with-cuda-graphs/">Accelerating PyTorch with CUDA Graphs | PyTorch</A>
 							</DL><p>
 							<DT><H3 FOLDED>cuda-profiling</H3>
 							<DL><p>
@@ -5158,18 +4896,41 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://vandurajan91.medium.com/random-seeds-and-reproducible-results-in-pytorch-211620301eba">Random seeds and reproducible results in PyTorch | by Vandana Rajan | Medium</A>
 								<DT><A HREF="https://developer.nvidia.com/deep-learning-performance-training-inference">Reproducible Performance</A>
 							</DL><p>
-							<DT><H3 FOLDED>cuda-driver</H3>
+							<DT><H3 FOLDED>cuda-error-correction-code</H3>
 							<DL><p>
-								<DT><H3 FOLDED>cuda-driver-installation</H3>
+							</DL><p>
+							<DT><H3 FOLDED>MGI</H3>
+							<DL><p>
+								<DT><A HREF="https://docs.nvidia.com/datacenter/tesla/mig-user-guide/index.html">NVIDIA Multi-Instance GPU User Guide :: NVIDIA Tesla Documentation</A>
+								<DT><A HREF="https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/">Getting the Most Out of the NVIDIA A100 GPU with Multi-Instance GPU | NVIDIA Technical Blog</A>
+								<DT><A HREF="https://pytorch.org/docs/stable/cuda.html">torch.cuda — PyTorch 1.13 documentation</A>
+								<DT><A HREF="https://discuss.pytorch.org/t/access-gpu-partitions-in-mig/142272">Access GPU partitions in MIG - PyTorch Forums</A>
+							</DL><p>
+							<DT><H3 FOLDED>GPUDirect</H3>
+							<DL><p>
+								<DT><A HREF="https://github.com/NVIDIA/gds-nvidia-fs">NVIDIA/gds-nvidia-fs: NVIDIA GPUDirect Storage Driver</A>
+								<DT><A HREF="https://developer.nvidia.com/blog/gpudirect-storage/">GPUDirect Storage: A Direct Path Between Storage and GPU Memory</A>
+								<DT><A HREF="https://arxiv.org/pdf/2203.04910.pdf?">GPU-Initiated On-Demand High-Throughput Storage Access in the BaM System Architecture</A>
+								<DT><A HREF="https://on-demand.gputechconf.com/supercomputing/2019/pdf/sc1922-gpudirect-storage-transfer-data-directly-to-gpu-memory-alleviating-io-bottlenecks.pdf">GPUDIRECT STORAGE:A DIRECT GPU-STORAGE DATA PATH</A>
+								<DT><A HREF="https://www.snia-j.org/cmm/images/2022/10/3-1NVIDIA.pdf">NVIDIA GPUDirect Storage</A>
+								<DT><A HREF="https://github.com/michaelbe2/write_to_gpu">michaelbe2/write_to_gpu: Using RC or DC with new post send APIs</A>
+								<DT><A HREF="https://github.com/alpa-projects/alpa/blob/main/examples/llm_serving/scripts/step_3_convert_to_numpy_weights.py">alpa/examples/llm_serving/scripts/step_3_convert_to_numpy_weights.py at main · alpa-projects/alpa</A>
+								<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/o-direct-guide/index.html">NVIDIA GPUDirect Storage O_DIRECT Requirements Guide - NVIDIA Docs</A>
+								<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/best-practices-guide/index.html">NVIDIA GPUDirect Storage Best Practices Guide - NVIDIA Docs</A>
+								<DT><A HREF="https://medium.com/@kaiyongx2/quick-guide-to-gpudirect-storage-gds-592037bdc046">Learning Nvidia GPUDirect. Impetus of Using GPUDirect Storage | by KY | Medium</A>
+								<DT><A HREF="https://chat.openai.com/c/61bb588b-35a7-42a6-90e9-c2355e5646a9">Identify Disk Storage Type</A>
+								<DT><H3 FOLDED>installation, uninstallation, configuration information</H3>
 								<DL><p>
+									<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/troubleshooting-guide/index.html">NVIDIA GPUDirect Storage Installation and Troubleshooting Guide - NVIDIA Docs</A>
+									<DT><A HREF="https://docs.nvidia.com/gpudirect-storage/troubleshooting-guide/index.html#mofed-req-install">NVIDIA GPUDirect Storage Installation and Troubleshooting Guide - NVIDIA Docs</A>
+									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv531001">NVIDIA MLNX_OFED Documentation Rev 5.3-1.0.0.1 - NVIDIA Docs</A>
+									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv461000/downloading+mellanox+ofed">Downloading Mellanox OFED - NVIDIA Docs</A>
+									<DT><A HREF="https://docs.nvidia.com/networking/display/mlnxofedv461000/general+support+in+mlnx_ofed">General Support in MLNX_OFED - NVIDIA Docs</A>
+									<DT><A HREF="https://network.nvidia.com/products/infiniband-drivers/linux/mlnx_ofed/">Linux InfiniBand Drivers</A>
 									<DT><A HREF="https://ubuntu.com/server/docs/nvidia-drivers-installation">NVIDIA drivers installation | Ubuntu</A>
-									<DT><A HREF="https://help.ubuntu.com/community/NvidiaDriversInstallation">NvidiaDriversInstallation - Community Help Wiki</A>
+									<DT><A HREF="https://github.com/developer-onizuka/gpudirect_storage">developer-onizuka/gpudirect_storage (global view)</A>
 								</DL><p>
-								<DT><A HREF="https://docs.nvidia.com/datacenter/tesla/index.html">NVIDIA Data Center GPU Driver Documentation</A>
-								<DT><A HREF="https://download.nvidia.com/XFree86/Linux-x86_64/470.223.02/README/">NVIDIA Accelerated Linux Graphics Driver README and Installation Guide</A>
-								<DT><A HREF="https://linux.die.net/man/8/modprobe">modprobe(8): add/remove modules from Kernel - Linux man page</A>
-								<DT><A HREF="https://github.com/tinygrad/open-gpu-kernel-modules">tinygrad/open-gpu-kernel-modules: NVIDIA Linux open GPU with P2P support</A>
-								<DT><A HREF="https://github.com/pytorch/pytorch/blob/acc466751b2723eb913fd3148b4f054189bbf1ab/.devcontainer/README.md">pytorch/.devcontainer/README.md: NVIDIA Container Toolkit for GPU Usage</A>
+								<DT><A HREF="https://man7.org/linux/man-pages/man8/lsblk.8.html">lsblk(8) - Linux manual page</A>
 							</DL><p>
 							<DT><H3 FOLDED>cuda-installation</H3>
 							<DL><p>
@@ -5194,24 +4955,23 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://faculty.cc.gatech.edu/~hyesoon/spr09/installcuda.html">https://faculty.cc.gatech.edu/~hyesoon/spr09/installcuda.html</A>
 								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/">CUDA Installation Guide for Linux</A>
 							</DL><p>
-							<DT><H3 FOLDED>cuda-learning</H3>
+							<DT><H3 FOLDED>cuda-driver</H3>
 							<DL><p>
-								<DT><H3 FOLDED>PMPP</H3>
+								<DT><H3 FOLDED>cuda-driver-installation</H3>
 								<DL><p>
-									<DT><A HREF="https://github.com/drisspg/simple_cuda">drisspg/simple_cuda: Learnings + Exercises from the PMPP book!</A>
-									<DT><A HREF="https://github.com/olcf/cuda-training-series">olcf/cuda-training-series: Training materials associated with NVIDIA's CUDA Training Series (www.olcf.ornl.gov/cuda-training-series/)</A>
-									<DT><A HREF="https://www.amazon.es/Programming-Massively-Parallel-Processors-Hands/dp/0323912311">Programming Massively Parallel Processors: A Hands-on Approach : Hwu, Wen-mei W., Kirk, David B., El Hajj, Izzat: Amazon.es: Libros</A>
-									<DT><A HREF="https://shop.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0">Programming Massively Parallel Processors - 4th Edition | Elsevier Shop</A>
-									<DT><A HREF="http://gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf">‎gpu.di.unimi.it/books/PMPP-3rd-Edition.pdf</A>
-									<DT><A HREF="https://www.cse.iitd.ac.in/~rijurekha/col730_2022/cudabook.pdf">NVIDIA version</A>
-									<DT><A HREF="https://www.amazon.com/Programming-Massively-Parallel-Processors-Hands/dp/0323912311">Programming Massively Parallel Processors: A Hands-on Approach: Hwu, Wen-mei W., Kirk, David B., El Hajj, Izzat: 9780323912310: Amazon.com: Books</A>
+									<DT><A HREF="https://ubuntu.com/server/docs/nvidia-drivers-installation">NVIDIA drivers installation | Ubuntu</A>
+									<DT><A HREF="https://help.ubuntu.com/community/NvidiaDriversInstallation">NvidiaDriversInstallation - Community Help Wiki</A>
 								</DL><p>
-								<DT><A HREF="https://ahgamut.github.io/">Blog Needs a Name</A>
-								<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_OwkTgEyA6tk3UsoPBH737">Livestream - P&amp;S Hands-on Acceleration on Heterogeneous Computing Systems (Fall 2021) - YouTube</A>
-								<DT><A HREF="https://www.youtube.com/playlist?list=PL5Q2soXY2Zi-Mnk1PxjEIG32HAGILkTOF">Livestream - Computer Architecture - ETH Zürich (Fall 2021) - YouTube</A>
-								<DT><A HREF="https://github.com/FZJ-JSC/tutorial-multi-gpu">FZJ-JSC/tutorial-multi-gpu: Efficient Distributed GPU Programming for Exascale, an SC/ISC Tutorial</A>
+								<DT><A HREF="https://docs.nvidia.com/datacenter/tesla/index.html">NVIDIA Data Center GPU Driver Documentation</A>
+								<DT><A HREF="https://download.nvidia.com/XFree86/Linux-x86_64/470.223.02/README/">NVIDIA Accelerated Linux Graphics Driver README and Installation Guide</A>
+								<DT><A HREF="https://linux.die.net/man/8/modprobe">modprobe(8): add/remove modules from Kernel - Linux man page</A>
+								<DT><A HREF="https://github.com/tinygrad/open-gpu-kernel-modules">tinygrad/open-gpu-kernel-modules: NVIDIA Linux open GPU with P2P support</A>
+								<DT><A HREF="https://github.com/pytorch/pytorch/blob/acc466751b2723eb913fd3148b4f054189bbf1ab/.devcontainer/README.md">pytorch/.devcontainer/README.md: NVIDIA Container Toolkit for GPU Usage</A>
 							</DL><p>
-							<DT><H3 FOLDED>cuda-Sharing</H3>
+							<DT><H3 FOLDED>cupy</H3>
+							<DL><p>
+							</DL><p>
+							<DT><H3 FOLDED>cuda-sharing</H3>
 							<DL><p>
 								<DT><H3 FOLDED>Multi-Process Service (MPS)</H3>
 								<DL><p>
@@ -5225,6 +4985,31 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 								<DT><A HREF="https://siboehm.com/">siboehm</A>
 								<DT><A HREF="https://leimao.github.io/tags/CUDA/">Tag: CUDA - Lei Mao's Log Book</A>
 							</DL><p>
+							<DT><A HREF="https://developer.nvidia.com/deep-learning-performance-training-inference">Reproducible Performance</A>
+							<DT><A HREF="https://catalog.ngc.nvidia.com/collections">Collections - Use-Case Based AI Software Packages | NVIDIA NGC</A>
+							<DT><A HREF="https://forums.fast.ai/t/clearing-gpu-memory-pytorch/14637">Clearing GPU Memory - PyTorch - Part 1 (2018) / Beginner (2018) - Deep Learning Course Forums</A>
+							<DT><A HREF="https://discuss.pytorch.org/t/why-moving-model-and-tensors-to-gpu/41498">Moving memory from CPU-RAM to GPU VRAM</A>
+							<DT><A HREF="https://www.programcreek.com/python/?CodeExample=clear+memory">Python clear memory</A>
+							<DT><A HREF="https://groups.google.com/a/anaconda.com/g/numba-users/c/7jkf-X_U7B8">Best way to clean up GPU memory</A>
+							<DT><A HREF="https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__MEMORY.html#group__CUDART__MEMORY_1ga042655cbbf3408f01061652a075e094">CUDA Runtime API :: CUDA Toolkit Documentation</A>
+							<DT><A HREF="https://docs.nvidia.com/deeplearning/cudnn/developer-guide/index.html">cuDNN Documentation</A>
+							<DT><A HREF="https://stackoverflow.com/questions/31326015/how-to-verify-cudnn-installation">cuda - How to verify CuDNN installation</A>
+							<DT><A HREF="https://nvidia.github.io/cuda-python/install.html">Installation - CUDA Python 12.1.0 documentation</A>
+							<DT><A HREF="https://twitter.com/marius/status/1657530968801181696/photo/1">GPU Computing</A>
+							<DT><A HREF="https://pytorch.org/docs/stable/notes/cuda.html#cuda-semantics">CUDA semantics — PyTorch 2.0 documentation</A>
+							<DT><A HREF="https://www.youtube.com/watch?v=QQceTDjA4f4">GTC 2022 - How CUDA Programming Works - Stephen Jones, CUDA Architect, NVIDIA - YouTube</A>
+							<DT><A HREF="https://www.youtube.com/watch?v=-J8YyfrSwTk">Effective ML - YouTube</A>
+							<DT><A HREF="https://github.com/enp1s0/cutf">enp1s0/cutf: CUDA Template Functions</A>
+							<DT><A HREF="https://jhui.github.io/2017/03/06/CUDA/">“CUDA Tutorial”</A>
+							<DT><A HREF="https://arxiv.org/pdf/1903.07486.pdf">https://arxiv.org/pdf/1903.07486.pdf</A>
+							<DT><A HREF="https://arxiv.org/abs/1903.07486">[1903.07486] Dissecting the NVidia Turing T4 GPU via Microbenchmarking</A>
+							<DT><A HREF="https://gist.github.com/mcarilli">mcarilli’s gists</A>
+							<DT><A HREF="https://futhark-lang.org/">Why Futhark?</A>
+							<DT><A HREF="https://www.youtube.com/watch?v=q38V66bqhfU">EfficientML.ai lecture - YouTube</A>
+							<DT><A HREF="https://github.com/coreylowman/cudarc">coreylowman/cudarc: Safe rust wrapper around CUDA toolkit</A>
+							<DT><A HREF="https://research.colfax-intl.com/adding-fp8-to-flashattention/">Delivering 1 PFLOP/s of Performance with FP8 FlashAttention-2 – Colfax Research</A>
+							<DT><A HREF="https://forums.fast.ai/t/clearing-gpu-memory-pytorch/14637">Clearing GPU Memory</A>
+							<DT><A HREF="https://github.com/microsoft/onnxruntime/tree/main/onnxruntime/core/providers/cuda">onnxruntime/onnxruntime/core/providers/cuda at main</A>
 							<DT><A HREF="https://github.com/NVIDIA/FasterTransformer/blob/df4a7534860137e060e18d2ebf019906120ea204/src/fastertransformer/kernels/matrix_transpose_kernels.cu#L4">FasterTransformer/src/fastertransformer/kernels/matrix_transpose_kernels.cu at df4a7534860137e060e18d2ebf019906120ea204 · NVIDIA/FasterTransformer</A>
 						</DL><p>
 						<DT><H3 FOLDED>rocm</H3>
@@ -5439,6 +5224,7 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 											<DT><A HREF="https://pytorch.org/get-started/pytorch-2.0/">max-autotune</A>
 											<DT><A HREF="https://twitter.com/jxmnop/status/1778835034079691008">max-autotune description</A>
 										</DL><p>
+										<DT><A HREF="https://github.com/thuml/depyf">thuml/depyf: understand and adapt to PyTorch compiler</A>
 										<DT><A HREF="https://pytorch.org/docs/main/torch.compiler_aot_inductor.html">AHEAD-OF-TIME COMPILATION FOR TORCH.EXPORT</A>
 										<DT><A HREF="https://dev-discuss.pytorch.org/t/the-future-of-c-model-deployment/1282">The future of C++ model deployment</A>
 										<DT><A HREF="https://github.com/pytorch/pytorch/blob/main/torch/_inductor/codegen/wrapper.py">codegen/wrapper.py</A>
@@ -5455,7 +5241,6 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 										<DT><A HREF="https://github.com/pytorch/pytorch/pull/107802">[Inductor CUTLASS backend] Step 1: Inductor config for cuda / cutlass, util functions</A>
 										<DT><A HREF="https://github.com/ngimel/inductor_generated">ngimel/inductor_generated</A>
 										<DT><A HREF="https://github.com/thuml/learn_torch.compile">thuml/learn_torch.compile: torch.compile artifacts for common deep learning models</A>
-										<DT><A HREF="https://github.com/thuml/depyf">thuml/depyf: understand and adapt to PyTorch compiler</A>
 										<DT><A HREF="https://twitter.com/cHHillee/status/1777825367954432114/photo/1">TORCH_LOGS="output_code" python t.py</A>
 										<DT><A HREF="https://gist.github.com/Chillee/f86675147366a7a0c6e244eaa78660f7">1-pw_op_fusion.py</A>
 									</DL><p>
@@ -5503,6 +5288,11 @@ Nvidia Hopper with MLIR’s NVGPU Dialect</A>
 										<DT><A HREF="https://www.youtube.com/watch?v=w30xteQDeO8">PT2 Export - A Sound Full Graph Capture Mechanism</A>
 										<DT><A HREF="https://www.youtube.com/watch?v=krwpwbH7NJc">PyTorch's Computational Graph</A>
 										<DT><A HREF="https://github.com/microsoft/Olive">microsoft/Olive: Olive is an easy-to-use hardware-aware model optimization tool that composes industry-leading techniques across model compression, optimization, and compilation.</A>
+									</DL><p>
+									<DT><H3 FOLDED>torch-compiler-depyf</H3>
+									<DL><p>
+										<DT><A HREF="https://pytorch.org/blog/introducing-depyf/">Introducing depyf: mastering torch.compile with ease | PyTorch</A>
+										<DT><A HREF="https://github.com/thuml/depyf">thuml/depyf: depyf is a tool to help you understand and adapt to PyTorch compiler torch.compile.</A>
 									</DL><p>
 									<DT><A HREF="https://github.com/thuml/learn_torch.compile">thuml/learn_torch.compile: torch.compile artifacts for common deep learning models, can be used as a learning resource for torch.compile</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=kdZwgRghy3M">XLA Internal</A>
