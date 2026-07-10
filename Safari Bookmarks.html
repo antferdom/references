@@ -104,7 +104,7 @@
 		<DT><A HREF="https://www.reddit.com/r/OpenAI/comments/u831xb/dalle_2_waitlist_length/">DALL-E 2 waitlist length : r/OpenAI</A>
 		<DT><A HREF="https://mail.google.com/mail/u/1/#inbox?compose=new">Inbox - antonio.jfdominguez@gmail.com - Gmail</A>
 	</DL><p>
-	<DT><H3 FOLDED>25-06-2026</H3>
+	<DT><H3 FOLDED>10-07-2026</H3>
 	<DL><p>
 		<DT><H3 FOLDED>Computational Research</H3>
 		<DL><p>
@@ -4464,6 +4464,7 @@ MODEL ACCELERATION WITH HIGH QUALITY</A>
 								<DT><H3 FOLDED>entropy</H3>
 								<DL><p>
 									<DT><A HREF="https://apaz.dev/blog/Thoughts_About_Entropy_and_Objectives.html">Thoughts About Entropy and Objectives</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=l6DKRf-fAAM&t=541s">Reinventing Entropy | Compression is Intelligence Part 1 - YouTube</A>
 								</DL><p>
 								<DT><H3 FOLDED>solomonoff-induction</H3>
 								<DL><p>
@@ -4544,6 +4545,7 @@ MODEL ACCELERATION WITH HIGH QUALITY</A>
 								<DT><A HREF="https://x.com/teortaxesTex/status/1980165682516869575">(1) Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) en X: "Whale insanity. «Theoretically unlimited context architectures» through turning old text into «vision» tokens at 10x and higher ratios. How crazy is that? But actually I think... we need to go even further beyond. Fully multimodal encoders. Language for intelligent machines. https://t.co/gv6dFYoJ6N" / X</A>
 								<DT><A HREF="https://arxiv.org/abs/2601.03220">[2601.03220] From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence</A>
 								<DT><A HREF="https://mp.weixin.qq.com/s/HYlU3ldZn_79GJol17s9xQ">30T tokens, when the information compression ratio reaches 10:1, the upper limit of the total model parameter size is roughly estimated to be 3T parameters.</A>
+								<DT><A HREF="https://www.youtube.com/watch?v=l6DKRf-fAAM&t=541s">Reinventing Entropy | Compression is Intelligence Part 1 - YouTube</A>
 							</DL><p>
 							<DT><H3 FOLDED>reasoning</H3>
 							<DL><p>
@@ -4677,6 +4679,7 @@ MODEL ACCELERATION WITH HIGH QUALITY</A>
 										<DT><A HREF="https://x.com/NorthstarBrain/status/1804823489632723057">claude 3.5 Sonnet: system prompt</A>
 										<DT><A HREF="https://x.com/_xjdr/status/1955134631378030806">self-reflection: are you sure about that?</A>
 										<DT><A HREF="https://x.com/cloneofsimo/status/1965263486357045567">(1) Simo Ryu en X: "* Dont use try-except, like ever * Dont use cringy emojis, like ever * make sure to remove any artifacts you generated * Dont make readme after youve done your job * Think of the test you would need to pass, write that test, and test your implementation against it. * Dont fucking" / X</A>
+										<DT><A HREF="https://github.com/xjdr-alt/entropix/blob/main/evals/sampler/claude_sampler.py"># reference: https://github.com/lm-sys/FastChat/blob/7899355ebe32117fdae83985cf8ee476d2f4243f/fastchat/conversation.py#L894</A>
 									</DL><p>
 									<DT><H3 FOLDED>context distillation</H3>
 									<DL><p>
@@ -5392,6 +5395,7 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 										<DT><A HREF="https://docs.x.ai/build/modes-and-commands">Modes and Commands | xAI Docs</A>
 									</DL><p>
 									<DT><A HREF="https://x.com/Hxlfed14/status/2028116431876116660">Agent Harness is the Real Product</A>
+									<DT><A HREF="https://github.com/patrick-toulme/harnessgym">patrick-toulme/harnessgym: Iterative agent harness improvement: run a coding agent on a hard task, generate the reusable tooling it was missing, qualify it, and replay fresh sessions with it activated. Works with Codex and Claude Code.</A>
 								</DL><p>
 								<DT><H3 FOLDED>bytedn-trae</H3>
 								<DL><p>
@@ -5864,6 +5868,7 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 									<DT><A HREF="https://openai.com/index/harness-engineering/">Harness engineering: leveraging Codex in an agent-first world | OpenAI</A>
 									<DT><A HREF="https://x.com/mike64_t/status/2020953317535514648">I think with Codex 5.3, the need for off-the-shelf deep learning libraries will fade away. Reasoning models operate best at the boundary of exact verifiabilty, so ever venturing too far into "well this is kinda correct" is no longer the best strategy. Exact verification now scales better than soft verification. When starting my current project, I deliberately decided against using any DL library because I wanted to take ownership of some things that are hard when a graph or eager model is in the way. Dispatching operations to multiple streams with fine-grained barrier relations is really stroking against the grain in PyTorch, and you are never really sure "am I really allowed to do this". There was a time for OpenGL, but people eventually did want a VkCmdBarrier for good reason. Because I also wanted predictable dispatch pacing, using C++ was a natural choice. Previously this meant taking on the burden of writing a lot of boilerplate, the equivalent of "shit I can't do this in unity, now I gotta write my own engine" which never seemed a good idea on the surface. Now I can say it was among the best decisions I have made. New operations are a prompt away, Codex can introspect and trace into any part of the codebase automatically, single-stepping even into nccl if ever needed, and supporting a new backend is trivial. At no point would your debugging lead into an opaque compiled native library you do not have the source code for, it will simply go-to-declaration one more time. In the age of reasoning models, a single source tree break is fatal and can be the difference between finding or not finding a bug. There is no cost to saying "write a test for this" and you've protected yourself against regressions for this case forever onwards. You can just say "implement muon, here's the repo" and it will do so and loss in wandb will literally look the same compared to the python baseline. Codex is a good autonomous debugger, so program runtime really starts to become a bottleneck, not thinking time. Hence start-up time is important. There is no reason your training script should take minutes to launch, when it could have performed the first step in the time it takes a shitty terminal to repaint. If your iteration loop was slow before, in the age of coding agents it is now fatal. By not triggering a billion library lazy inits at unpredictable points in time because your ML framework decided to do so, your Nsight traces look as clean as higher level profilers would, just with more introspectability. You finally get to use NVTX the way Nvidia always intended for you to do. Another thing, kernels are just cuda elf binaries. There is no reason to deal with a flash attention package installation. This is all cpu-side. Tell codex to write packaging logic to compile it AOT, and document the kernel signature how arguments have to be prepared. In the C++ code load that kernel from a resource and then simply pass those arguments. This approach is modular. Want a cutlass, flash attention, triton or cute dsl backend and reserve the right to write a custom kernel later? No problem. Nobody wants to write backend kernel dispatch logic, but you don't have to anymore. Does C++ scare you? Maintain a minimal Python reference implementation in PyTorch with the intent of keeping behavior exactly the same, just without all the optimizations. Exact verifiability means you can resume that cpp checkpoint in your Python implementation and get near-exact loss overlap in wandb and vice-versa. No more spook, it's either in the spec, or it's not. That is what verifiability means. mike While I think there is a large cost to move off of pre-existing infra, eventually taking ownership of more and more pieces of the codebase will become more and more desirable with this change in dynami</A>
 									<DT><A HREF="https://github.com/NousResearch/hermes-agent">NousResearch/hermes-agent: The agent that grows with you</A>
+									<DT><A HREF="https://github.com/patrick-toulme/harnessgym">patrick-toulme/harnessgym: Iterative agent harness improvement: run a coding agent on a hard task, generate the reusable tooling it was missing, qualify it, and replay fresh sessions with it activated. Works with Codex and Claude Code.</A>
 								</DL><p>
 								<DT><H3 FOLDED>automated-experimentation</H3>
 								<DL><p>
@@ -6020,13 +6025,24 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 								</DL><p>
 								<DT><H3 FOLDED>Terminal-Bench</H3>
 								<DL><p>
-									<DT><A HREF="https://x.com/mike_a_merrill/status/2014400516642488658?s=12">(1) Mike A. Merrill en X: "The Terminal-Bench paper is here! Read it to learn where frontier models still fail and the secrets of how we sourced hundreds of high quality environments from our open source community. 🧵 https://t.co/juIviCM1jX" / X</A>
-									<DT><A HREF="https://arxiv.org/pdf/2601.11868">TERMINAL-BENCH: BENCHMARKING AGENTS ON HARD, REALISTIC TASKS IN COMMAND LINE INTERFACES</A>
 									<DT><H3 FOLDED>Terminal-bench-2.1</H3>
 									<DL><p>
 										<DT><A HREF="https://evals.report/run/terminal-bench">Run Terminal-Bench 2.1 — benchmark guide | evals.report</A>
 										<DT><A HREF="https://github.com/harbor-framework/harbor">harbor-framework/harbor: Framework for evaluating and improving agents</A>
 									</DL><p>
+									<DT><A HREF="https://x.com/mike_a_merrill/status/2014400516642488658?s=12">(1) Mike A. Merrill en X: "The Terminal-Bench paper is here! Read it to learn where frontier models still fail and the secrets of how we sourced hundreds of high quality environments from our open source community. 🧵 https://t.co/juIviCM1jX" / X</A>
+									<DT><A HREF="https://arxiv.org/pdf/2601.11868">TERMINAL-BENCH: BENCHMARKING AGENTS ON HARD, REALISTIC TASKS IN COMMAND LINE INTERFACES</A>
+								</DL><p>
+								<DT><H3 FOLDED>SWE-Together</H3>
+								<DL><p>
+									<DT><A HREF="https://x.com/yifannnwu/status/2071976415223050636">(1) Yifan Wu en X: "Introducing SWE-Together: a multi-turn benchmark built from real user–agent coding sessions. Coding agents are often benchmarked like exam-takers: given the full spec up front, then graded on the final code. But real coding help is a conversation — users clarify goals, add https://t.co/bG7i4z4njV" / X</A>
+									<DT><A HREF="https://arxiv.org/abs/2606.29957">[2606.29957] SWE-Together: Evaluating Coding Agents in Interactive User Sessions</A>
+									<DT><A HREF="https://github.com/Togetherbench/SWE-Together">Togetherbench/SWE-Together: SWE-Together: Evaluating Coding Agents in Interactive User Sessions</A>
+									<DT><A HREF="https://togetherbench.com/">SWE-Together: Interactive Coding-Agent Evaluation</A>
+									<DT><A HREF="https://traces.togetherbench.com/jobs/trials/tasks/_/terminus-2/anthropic/claude-opus-4-6/nunchaku-implement-a136a8/trials/nunchaku-implement-a136a8__9Uvpxkp">https://traces.togetherbench.com/jobs/trials/tasks/_/terminus-2/anthropic/claude-opus-4-6/nunchaku-implement-a136a8/trials/nunchaku-implement-a136a8__9Uvpxkp</A>
+									<DT><A HREF="https://traces.togetherbench.com/jobs/trials">https://traces.togetherbench.com/jobs/trials</A>
+									<DT><A HREF="https://huggingface.co/datasets/archit11/claude_traces_hs">archit11/claude_traces_hs · Datasets at Hugging Face</A>
+									<DT><A HREF="https://arxiv.org/pdf/2606.29957">SWE-Together: Evaluating Coding Agents in Interactive User Sessions</A>
 								</DL><p>
 								<DT><H3 FOLDED>DeepSWE</H3>
 								<DL><p>
@@ -6080,10 +6096,13 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 								<DL><p>
 									<DT><A HREF="https://artificialanalysis.ai/articles/aa-briefcase">Announcing AA-Briefcase: a frontier knowledge work evaluation | Artificial Analysis</A>
 								</DL><p>
+								<DT><A HREF="https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents">Demystifying evals for AI agents \ Anthropic</A>
 								<DT><A HREF="https://x.com/_jasonwei/status/1939762496757539297">We don’t have AI self-improves yet, and when we do it will be a game-changer.</A>
 								<DT><A HREF="https://github.com/Noumena-Network/NSA-Test">Noumena-Network/NSA-Test: NSA Triton Kernels written with GPT5 and Opus 4.1</A>
 								<DT><A HREF="https://x.com/ArtificialAnlys/status/2066700136018071841">(1) Artificial Analysis en X: "Announcing Artificial Analysis Intelligence Index v4.1: a shift toward agentic workloads, featuring upgraded benchmarks and new per-task metrics The Artificial Analysis Intelligence Index is our synthesis metric for assessing model intelligence and tracking AI progress. v4.1 https://t.co/VdWMoR8Ihk" / X</A>
 								<DT><A HREF="https://www.swe-marathon.org/">SWE-Marathon - Long-Horizon Software Engineering Benchmark</A>
+								<DT><A HREF="https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues">A postmortem of three recent issues \ Anthropic</A>
+								<DT><A HREF="https://www.anthropic.com/engineering/infrastructure-noise">Quantifying infrastructure noise in agentic coding evals \ Anthropic</A>
 							</DL><p>
 							<DT><H3 FOLDED>agents-architecture</H3>
 							<DL><p>
@@ -6191,6 +6210,7 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 								</DL><p>
 								<DT><A HREF="https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues">A postmortem of three recent issues \ Anthropic</A>
 								<DT><A HREF="https://z.ai/blog/scaling-pain">Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale</A>
+								<DT><A HREF="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/">Defeating Nondeterminism in LLM Inference - Thinking Machines Lab</A>
 							</DL><p>
 							<DT><H3 FOLDED>seqio</H3>
 							<DL><p>
@@ -6304,6 +6324,8 @@ Next-token prediction is incredibly noisy. By forcing hidden states into locally
 							<DT><A HREF="https://x.com/NeoResearchAI/status/2061745304312086942">(1) Neo Research en X: "We're Neo Research (新衡). Asia’s first independent frontier AI safety evaluation &amp;amp; research lab. Today we're publishing our first report: an independent safety evaluation of DeepSeek v4 Pro. (1/5)" / X</A>
 							<DT><A HREF="https://x.com/VictorTaelin/status/2064324115989766164">(1) Taelin en X: "Just an example on Opus 4.8 outclassing GPT 5.5 in ways that are invisible to benchmarks. (When I post these, this is NOT an attack on OpenAI in any way, quite the opposite, I just want things to improve...) Left both working in a generic goal: "optimize this file". After 8 https://t.co/NcyglJLf1h" / X</A>
 							<DT><A HREF="https://github.com/promptfoo/promptfoo">promptfoo/promptfoo: Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration. Used by OpenAI and Anthropic.</A>
+							<DT><A HREF="https://github.com/zai-org/glm-simple-evals">zai-org/glm-simple-evals: GLM-SIMPLE-EVALS: The evaluation repository for the GLM-4.5 series of models by Z.ai.</A>
+							<DT><A HREF="https://github.com/modelscope/evalscope">modelscope/evalscope: A streamlined and customizable framework for efficient large model (LLM, VLM, AIGC) evaluation and performance benchmarking.</A>
 						</DL><p>
 						<DT><H3 FOLDED>language-training</H3>
 						<DL><p>
@@ -7112,6 +7134,7 @@ CUTTING THE SKIP: TRAINING RESIDUAL-FREE TRANSFORMERS</A>
 											<DT><A HREF="https://github.com/meta-llama/llama-models/tree/main/models/llama4">llama-models/models/llama4 at main · meta-llama/llama-models</A>
 											<DT><A HREF="https://github.com/meta-llama/llama-models/blob/main/models/llama4/model.py">llama-models/models/llama4/model.py at main · meta-llama/llama-models</A>
 											<DT><A HREF="https://zhuanlan.zhihu.com/p/1914466839750218423">Meta Shuffling的MoE Grouped GEMM kernel benchmark - 知乎</A>
+											<DT><A HREF="https://llm-d.ai/blog/llm-d-v0.2-our-first-well-lit-paths#improved-benchmarking-suite">llm-d 0.2: Our first well-lit paths (mind the tree roots!) | llm-d</A>
 										</DL><p>
 										<DT><H3 FOLDED>llama 3.1</H3>
 										<DL><p>
@@ -7190,6 +7213,10 @@ CUTTING THE SKIP: TRAINING RESIDUAL-FREE TRANSFORMERS</A>
 											<DT><H3 FOLDED>gemma-4-architecture</H3>
 											<DL><p>
 												<DT><A HREF="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4">A Visual Guide to Gemma 4 - by Maarten Grootendorst</A>
+											</DL><p>
+											<DT><H3 FOLDED>gemma-4-dflash</H3>
+											<DL><p>
+												<DT><A HREF="https://huggingface.co/deepseek-ai/dflash_gemma4_12b_block7">deepseek-ai/dflash_gemma4_12b_block7 · Hugging Face</A>
 											</DL><p>
 										</DL><p>
 										<DT><H3 FOLDED>gemma-3</H3>
@@ -8255,6 +8282,7 @@ A Streaming Power Iteration Approach to Muon</A>
 									<DT><A HREF="https://jiha-kim.github.io/posts/frequency-domain-muon-for-conv-filters/">Frequency-Domain Muon for Conv Filters - Orthogonalizing the Operator | Ji-Ha's Blog</A>
 									<DT><A HREF="https://x.com/tensorqt/status/2051408233311408355">muon diagram Orthogonal matrix optimization</A>
 									<DT><A HREF="https://x.com/_arohan_/status/2064631528806908134">rohan anil en X: "Hyper-parameter tuning works really well! Since Keller asked very nicely - I took it as a challenge to find a minimal edit distance from his config to a working config with no further code modifications, which means vanilla Meta's distributed_shampoo PyTorch package as is which https://t.co/BQyHuy9eNI" / X</A>
+									<DT><A HREF="https://x.com/sara_drag/status/2071927620564815937">Sara Dragutinovic en X: "Is Muon as good as they say? We looked beyond training speed and found a hidden cost: Muon loses the simplicity bias of older optimizers like gradient descent — and this matters for generalization. https://t.co/t85NhOtCsG" / X</A>
 								</DL><p>
 								<DT><H3 FOLDED>Dion</H3>
 								<DL><p>
@@ -8411,6 +8439,12 @@ A Streaming Power Iteration Approach to Muon</A>
 									<DT><A HREF="https://x.com/jxbz/status/1851328119539429487">The General Theory of Modular Duality</A>
 									<DT><A HREF="https://thinkingmachines.ai/blog/modular-manifolds/">Modular Manifolds - Thinking Machines Lab</A>
 									<DT><A HREF="https://gist.github.com/YouJiacheng/393c90cbdc23b09d5688815ba382288b/5bff1f7781cf7d062a155eecd2f13075756482ae">muon coefficients</A>
+								</DL><p>
+								<DT><H3 FOLDED>parameter-golf</H3>
+								<DL><p>
+									<DT><A HREF="https://openai.com/index/what-parameter-golf-taught-us/">What Parameter Golf taught us | OpenAI</A>
+									<DT><A HREF="https://github.com/openai/parameter-golf">openai/parameter-golf: Train the smallest LM you can that fits in 16MB. Best model wins!</A>
+									<DT><A HREF="https://openai-parameter-golf.mintlify.app/introduction">Parameter Golf - Parameter Golf</A>
 								</DL><p>
 								<DT><A HREF="https://www.youtube.com/watch?v=-uyXE7dY5H0">NIPS: Oral Session 4 - Ilya Sutskever  batch_size, learning rate, init scale, norm of gradient is clipped to</A>
 								<DT><A HREF="https://twitter.com/cloneofsimo/status/1741381460274331916">muP is effective weight init scheme everyone should use. With ezmup 3 LOC is all you need+ it's model agnostic (Simo)</A>
@@ -8713,6 +8747,7 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 										<DT><A HREF="https://github.com/radixark/miles/pull/449">Support speculative information in mock sglang server by fzyzcjy · Pull Request #449 · radixark/miles</A>
 										<DT><A HREF="https://github.com/radixark/miles/pull/1045">DeepSeek V4 RL support by yueming-yuan · Pull Request #1045 · radixark/miles</A>
 										<DT><A HREF="https://osmosis.ai/blogs/training-thousands-of-lora-adapters-at-once">Training Thousands of LoRA Adapters at Once</A>
+										<DT><A HREF="https://pytorch.org/blog/miles-a-pytorch-native-stack-for-large-scale-llm-rl-post-training/">Miles: A PyTorch-Native Stack for Large-Scale LLM RL Post-Training – PyTorch</A>
 									</DL><p>
 									<DT><H3 FOLDED>language-models-rl-one-example</H3>
 									<DL><p>
@@ -8763,6 +8798,8 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 										<DT><A HREF="https://arxiv.org/abs/2509.26114">[2509.26114] Clip-Low Increases Entropy and Clip-High Decreases Entropy in Reinforcement Learning of Large Language Models</A>
 										<DT><A HREF="https://x.com/RichardYRLi/status/2067480813974048829">(1) Yingru Li en X: "@johnschulman2 and here is some understanding on the ppo clip and trust region principle for LLM-RL @johnschulman2 https://t.co/kn7Fn9K8dy https://t.co/dCspaLzlCR" / X</A>
 										<DT><A HREF="https://arxiv.org/abs/2512.23075">[2512.23075] Trust Region Masking for Long-Horizon LLM Reinforcement Learning</A>
+										<DT><A HREF="https://x.com/Grad62304977/status/2075092570921681288">(2) Grad en X: "New GLM paper on the PPO algo they use for GLM 5.2 Clearly the PPO hype was overblown (DIS here is Icepop without recompute which we first did in Intellect-3) This also comes with 3x longer trainer steps, 2x memory on trainer (with equal inference compute), and extra compute to https://t.co/K1uKQqk8Yt" / X</A>
+										<DT><A HREF="https://arxiv.org/abs/2607.07508">[2607.07508] Single-Rollout Asynchronous Optimization for Agentic Reinforcement Learning</A>
 									</DL><p>
 									<DT><H3 FOLDED>DPO</H3>
 									<DL><p>
@@ -8949,6 +8986,7 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 									<DT><A HREF="https://arxiv.org/abs/2601.20802">[2601.20802] Reinforcement Learning via Self-Distillation</A>
 									<DT><A HREF="https://aweers.de/blog/2026/rl-for-llms/">State of RL for reasoning LLMs | A. Weers</A>
 									<DT><A HREF="https://arxiv.org/abs/2606.12360">[2606.12360] Anatomy of Post-Training: Using Interpretability to Characterize Data and Shape the Learning Signal</A>
+									<DT><A HREF="https://willcb.com/assets/pdfs/lmcd.pdf">CLUSTERING AND ENTITY MATCHING VIA LANGUAGE MODEL COMMUNITY DETECTION</A>
 								</DL><p>
 								<DT><H3 FOLDED>chat</H3>
 								<DL><p>
@@ -9466,6 +9504,17 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 								<DT><A HREF="https://github.com/NVIDIA/TensorRT-LLM/blob/main/docs/source/blogs/tech_blog/blog17_Sparse_Attention_in_TensorRT-LLM.md">TensorRT-LLM/docs/source/blogs/tech_blog/blog17_Sparse_Attention_in_TensorRT-LLM.md at main · NVIDIA/TensorRT-LLM</A>
 								<DT><A HREF="https://www.lmsys.org/blog/2026-04-10-sglang-hisparse/">DSA doesn't reduce KV cache size but we can offload it during decoding</A>
 							</DL><p>
+							<DT><H3 FOLDED>DeepSpec</H3>
+							<DL><p>
+								<DT><H3 FOLDED>dpsk-dflash</H3>
+								<DL><p>
+									<DT><A HREF="https://huggingface.co/deepseek-ai/dflash_gemma4_12b_block7/tree/main">deepseek-ai/dflash_gemma4_12b_block7 at main</A>
+									<DT><A HREF="https://huggingface.co/collections/deepseek-ai/deepspec">DeepSpec - a deepseek-ai Collection</A>
+								</DL><p>
+								<DT><A HREF="https://github.com/deepseek-ai/DeepSpec">deepseek-ai/DeepSpec: DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms</A>
+								<DT><A HREF="https://huggingface.co/collections/deepseek-ai/deepspec">DeepSpec - a deepseek-ai Collection</A>
+								<DT><A HREF="https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf">DeepSpec/DSpark_paper.pdf at main · deepseek-ai/DeepSpec</A>
+							</DL><p>
 							<DT><H3 FOLDED>dpsk-v4</H3>
 							<DL><p>
 								<DT><H3 FOLDED>dpsk-v4-architecture</H3>
@@ -9509,6 +9558,10 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 								</DL><p>
 								<DT><H3 FOLDED>dpsk-v4-inference</H3>
 								<DL><p>
+									<DT><H3 FOLDED>dpsk-v4-inference-cuda</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/openinfer-project/openinfer/blob/main/openinfer-deepseek-v4/src/runtime/attention.rs">openinfer/openinfer-deepseek-v4/src/runtime/attention.rs at main · openinfer-project/openinfer</A>
+									</DL><p>
 									<DT><A HREF="https://www.together.ai/blog/serving-deepseek-v4-why-million-token-context-is-an-inference-systems-problem">Serving DeepSeek-V4: why million-token context is an inference systems problem</A>
 									<DT><A HREF="https://x.com/teortaxesTex/status/2053870174323831202">Composer 2 in Cursor CLI is cheapest at $0.07/task, followed by DeepSeek V4 Pro in Claude Code at $0.35/task and Kimi K2.6 in Claude Code at $0.76/task This is pretty weird. DS in Claude Code has garbage cache hit rate (in pi it's ≈100%), but anyway, Cursor is crazy efficient</A>
 									<DT><A HREF="https://github.com/antirez/ds4">antirez/ds4: DeepSeek 4 Flash local inference engine for Metal</A>
@@ -9552,6 +9605,12 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 										<DT><A HREF="https://github.com/BBuf/how-to-optim-algorithm-in-cuda/blob/0939a052893b29e458aad73d91316cf4f2275c5e/large-language-model-note/DeepEP%EF%BC%9A%E4%BB%8B%E7%BB%8D%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md">how-to-optim-algorithm-in-cuda/large-language-model-note/DeepEP</A>
 										<DT><A HREF="https://zhuanlan.zhihu.com/p/2010804354895062050">DeepEP code analysis</A>
 									</DL><p>
+									<DT><H3 FOLDED>DeepEP-v2</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/deepseek-ai/DeepGEMM/pull/304">deep_ep.ElasticBuffer (DeepEP V2)</A>
+										<DT><A HREF="https://x.com/teortaxesTex/status/2047191920888139778">(1) Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) en X: "&amp;gt; Engram remote KV fetch &amp;gt; NVLink + RDMA hierarchical mode So at least Engram is not abandoned as a dead end experiment, despite leaks that it's ngmi for V4. Re: RDMA, I often feel sad when I consider how ambitious their clusters could be if they had the chips to match the vision https://t.co/TUSNzUTxqn" / X</A>
+										<DT><A HREF="https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247498255&idx=1&sn=3d0b93a65cb5aad476b611e36b5b512a&scene=21&poc_token=HFDLFWqjyfvur6dQX169rFdz3m_ihff9heB27yDx">DeepEPv2分析(3)-EP Direct Dispatch/Combine Kernel (zarbot)</A>
+									</DL><p>
 									<DT><H3 FOLDED>DeepEP-install</H3>
 									<DL><p>
 										<DT><A HREF="https://github.com/sgl-project/sglang/blob/main/docker/Dockerfile">sglang/docker/Dockerfile at main · sgl-project/sglang</A>
@@ -9572,11 +9631,9 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 										<DT><A HREF="https://github.com/Infrawaves/DeepEP_ibrc_dual-ports_multiQP">Infrawaves/DeepEP_ibrc_dual-ports_multiQP: Aims to implement dual-port and multi-qp solutions in deepEP ibrc transport</A>
 										<DT><A HREF="https://github.com/Infrawaves/DeepEP_ibrc_dual-ports_multiQP/blob/main/nvshmem_ibrc.patch">DeepEP_ibrc_dual-ports_multiQP/nvshmem_ibrc.patch at main · Infrawaves/DeepEP_ibrc_dual-ports_multiQP</A>
 									</DL><p>
-									<DT><H3 FOLDED>DeepEP-v2</H3>
+									<DT><H3 FOLDED>DeepEP-fault_tolerance</H3>
 									<DL><p>
-										<DT><A HREF="https://github.com/deepseek-ai/DeepGEMM/pull/304">deep_ep.ElasticBuffer (DeepEP V2)</A>
-										<DT><A HREF="https://x.com/teortaxesTex/status/2047191920888139778">(1) Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) en X: "&amp;gt; Engram remote KV fetch &amp;gt; NVLink + RDMA hierarchical mode So at least Engram is not abandoned as a dead end experiment, despite leaks that it's ngmi for V4. Re: RDMA, I often feel sad when I consider how ambitious their clusters could be if they had the chips to match the vision https://t.co/TUSNzUTxqn" / X</A>
-										<DT><A HREF="https://mp.weixin.qq.com/s?__biz=MzUxNzQ5MTExNw==&mid=2247498255&idx=1&sn=3d0b93a65cb5aad476b611e36b5b512a&scene=21&poc_token=HFDLFWqjyfvur6dQX169rFdz3m_ihff9heB27yDx">DeepEPv2分析(3)-EP Direct Dispatch/Combine Kernel (zarbot)</A>
+										<DT><A HREF="https://github.com/kvcache-ai/DeepEP_fault_tolerance">kvcache-ai/DeepEP_fault_tolerance: DeepEP: an efficient expert-parallel communication library that supports fault tolerance</A>
 									</DL><p>
 									<DT><A HREF="https://github.com/deepseek-ai/DeepEP">deepseek-ai/DeepEP: DeepEP: an efficient expert-parallel communication library</A>
 									<DT><A HREF="https://mp.weixin.qq.com/s/WFJxnTF9fGIIXPA7GQ5V2w">DeepSeek V3 MoE Expert Parallelism</A>
@@ -9640,6 +9697,7 @@ Up to 70% end2end speedup on 1x 4090 and 40% speedup on 1x A100 with 4 lines of 
 									<DT><A HREF="https://arxiv.org/pdf/2505.19590">LEARNING TO REASON WITHOUT EXTERNAL REWARDS</A>
 									<DT><A HREF="https://arxiv.org/abs/2601.20802">[2601.20802] Reinforcement Learning via Self-Distillation</A>
 									<DT><A HREF="https://x.com/tugot17/status/2031662498449928698">Q: "Whatis 2+2?" - Rollout group of 3 attemps (do self-verification) intuition</A>
+									<DT><A HREF="https://x.com/Grad62304977/status/2075092570921681288">(2) Grad en X: "New GLM paper on the PPO algo they use for GLM 5.2 Clearly the PPO hype was overblown (DIS here is Icepop without recompute which we first did in Intellect-3) This also comes with 3x longer trainer steps, 2x memory on trainer (with equal inference compute), and extra compute to https://t.co/K1uKQqk8Yt" / X</A>
 								</DL><p>
 								<DT><H3 FOLDED>QwQ</H3>
 								<DL><p>
@@ -10066,7 +10124,6 @@ It is not because the model 'memorized the answers,' but because Engram handles 
 								<DT><H3 FOLDED>msa</H3>
 								<DL><p>
 									<DT><A HREF="https://github.com/MiniMax-AI/MSA/blob/main/docs/MiniMaxSparseAttention.pdf">MSA/docs/MiniMaxSparseAttention.pdf at main · MiniMax-AI/MSA</A>
-									<DT><A HREF="https://github.com/MiniMax-AI/MSA/blob/main/docs/MiniMaxSparseAttention.pdf">MSA/docs/MiniMaxSparseAttention.pdf at main · MiniMax-AI/MSA</A>
 									<DT><A HREF="https://github.com/MiniMax-AI/MSA/blob/main/docs/architecture.png">MSA/docs/architecture.png at main · MiniMax-AI/MSA</A>
 									<DT><A HREF="https://arxiv.org/html/2606.13392v1">MiniMax Sparse Attention</A>
 								</DL><p>
@@ -10150,6 +10207,8 @@ It is not because the model 'memorized the answers,' but because Engram handles 
 								<DT><A HREF="https://x.com/teortaxesTex/status/2011532416977104913">(1) Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) en X: "Meituan (yes the food delivery company) catches up to the current synthetic environment meta of DeepSeek/Kimi/Xiaomi, and in some ways steps further, with their take on data generation and Heavy mode. Their sparse attention: «coming soon». Potentially another Tier 1 lab. https://t.co/FRLaGjQLgc" / X</A>
 							</DL><p>
 							<DT><A HREF="https://huggingface.co/meituan-longcat/papers">meituan-longcat (LongCat) technical reports</A>
+							<DT><A HREF="https://arxiv.org/abs/2509.01322">[2509.01322] LongCat-Flash Technical Report</A>
+							<DT><A HREF="https://arxiv.org/pdf/2601.21204">Scaling Embeddings Outperforms Scaling Experts in Language Models</A>
 						</DL><p>
 						<DT><H3 FOLDED>Step</H3>
 						<DL><p>
@@ -10590,6 +10649,7 @@ So ByteDance has just caught up (and slightly exceeded) AlphaFold 3, and the ori
 									<DT><A HREF="https://x.com/HuggingPapers/status/1964179479330271565">(1) DailyPapers en X: "China's Baichuan-Inc unveils Baichuan-M2: a 32B medical LLM with a dynamic verifier system for real-world clinical reasoning. It sets new state-of-the-art on HealthBench Hard, outperforming most advanced models, previously exceeded only by GPT-5. https://t.co/pK8tZcQSLf" / X</A>
 									<DT><A HREF="https://arxiv.org/abs/2509.02208">[2509.02208] Baichuan-M2: Scaling Medical Capability with Large Verifier System</A>
 								</DL><p>
+								<DT><A HREF="https://www.youtube.com/watch?v=kALDN4zIBT0&t=2s">Yes, Doctors: AI Will Replace You - YouTube</A>
 							</DL><p>
 							<DT><H3 FOLDED>molecular-design</H3>
 							<DL><p>
@@ -11548,10 +11608,10 @@ Language Models</A>
 									<DT><H3 FOLDED>Orca</H3>
 									<DL><p>
 										<DT><A HREF="https://arxiv.org/pdf/2305.05920">Fast Distributed Inference Serving for Large Language Models</A>
-										<DT><A HREF="https://www.usenix.org/conference/osdi22/presentation/yu">Orca: A Distributed Serving System for Transformer-Based Generative Models | USENIX</A>
 										<DT><A HREF="https://strint.notion.site/TurboTransformer-8776e615b6484f17a82ca3af81bcacfc">TurboTransformer: 变长输入任务的优化</A>
 										<DT><A HREF="https://www.youtube.com/watch?v=z2M8gKGYws4">Understanding the LLM Inference Workload - Mark Moyou, NVIDIA - YouTube</A>
 										<DT><A HREF="https://www.youtube.com/watch?v=Ob9PPLxETYU">OSDI '22 - Orca: A Distributed Serving System for Transformer-Based Generative Models - YouTube</A>
+										<DT><A HREF="https://www.usenix.org/conference/osdi22/presentation/yu">Orca: A Distributed Serving System for Transformer-Based Generative Models | USENIX</A>
 									</DL><p>
 								</DL><p>
 								<DT><A HREF="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical Blog</A>
@@ -12896,6 +12956,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://x.com/tqchenml/status/2069382647302734099">(1) Tianqi Chen en X: "We taught a brand-new mini-series this year at @SCSatCMU on Modern GPU Programming for ML Systems, as part of the ML Systems course, touching on fun questions like what data layout swizzling is, how to use 3D TMA, and state-of-the-art Blackwell programming. We released a curated https://t.co/by7azvp709" / X</A>
 									<DT><A HREF="https://mlc.ai/modern-gpu-programming-for-mlsys/">Modern GPU Programming For MLSys — Modern GPU Programming For MLSys</A>
 									<DT><A HREF="https://github.com/mit-han-lab/KernelWiki">mit-han-lab/KernelWiki</A>
+									<DT><A HREF="https://zhuanlan.zhihu.com/p/2054548076421978077">从 Volta 到 Blackwell：GPU 编程范式的十年变迁 - 知乎</A>
 								</DL><p>
 								<DT><H3 FOLDED>cuda-memory-model</H3>
 								<DL><p>
@@ -13329,6 +13390,10 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 								<DT><H3 FOLDED>ninja</H3>
 								<DL><p>
 									<DT><A HREF="https://github.com/search?q=repo%3ATiledTensor%2FTiledCUDA+proc&type=code">make -j$(proc)</A>
+								</DL><p>
+								<DT><H3 FOLDED>cuda-oxide</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/NVlabs/cuda-oxide">NVlabs/cuda-oxide: cuda-oxide is an experimental Rust-to-CUDA compiler that lets you write (SIMT) GPU kernels in safe(ish), idiomatic Rust. It compiles standard Rust code directly to PTX — no DSLs, no foreign language bindings, just Rust.</A>
 								</DL><p>
 								<DT><A HREF="https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html">CUDA NVCC</A>
 								<DT><A HREF="https://leimao.github.io/blog/CUDA-Compilation/">CUDA Compilation - Lei Mao's Log Book</A>
@@ -14385,6 +14450,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><H3 FOLDED>nsys-commands</H3>
 									<DL><p>
 										<DT><A HREF="https://github.com/yanring/Megatron-MoE-ModelZoo/blob/main/sbatch_benchmarking.sh">PROFILE_CMD="nsys profile --sample=none --cpuctxsw=none -t cuda,nvtx</A>
+										<DT><A HREF="https://github.com/openinfer-project/openinfer/blob/main/.claude/skills/nsys-profiling/SKILL.md">openinfer/.claude/skills/nsys-profiling/SKILL.md at main · openinfer-project/openinfer</A>
 									</DL><p>
 									<DT><H3 FOLDED>nsight-py</H3>
 									<DL><p>
@@ -14431,6 +14497,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://blog.ncompass.tech/using-ncu-with-large-codebases-part-2">Using Nsight Compute with large codebases - Part 2 : Profiling large code bases</A>
 									<DT><A HREF="https://x.com/mike64_t/status/2017444138032238738">(1) mike64_t en X: "Optimize for Nsight aesthetics https://t.co/3j8RaEQWGM" / X</A>
 									<DT><A HREF="https://github.com/sgl-project/sglang/blob/d41e77a317b53ccb6bfa589c6b7772a0dedfc53e/python/sglang/multimodal_gen/.claude/skills/diffusion-kernel/nsight-profiler.md">sglang/python/sglang/multimodal_gen/.claude/skills/diffusion-kernel/nsight-profiler.md</A>
+									<DT><A HREF="https://github.com/openinfer-project/openinfer/blob/main/.claude/skills/nsys-profiling/SKILL.md">openinfer/.claude/skills/nsys-profiling/SKILL.md at main · openinfer-project/openinfer</A>
 								</DL><p>
 								<DT><H3 FOLDED>NVML</H3>
 								<DL><p>
@@ -14624,6 +14691,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><H3 FOLDED>rust-ibverbs</H3>
 									<DL><p>
 										<DT><A HREF="https://github.com/jonhoo/rust-ibverbs">jonhoo/rust-ibverbs: Bindings for RDMA ibverbs through rdma-core</A>
+										<DT><A HREF="https://github.com/jonhoo/rust-ibverbs/tree/main/ibverbs/examples">rust-ibverbs/ibverbs/examples at main · jonhoo/rust-ibverbs</A>
 									</DL><p>
 									<DT><A HREF="https://github.com/jgunthorpe/python-rdma">jgunthorpe/python-rdma: Python interface to the Linux RDMA stack</A>
 									<DT><A HREF="https://github.com/linux-rdma/rdma-core/blob/master/debian/ibverbs-utils.install">rdma-core/debian/ibverbs-utils.install at master · linux-rdma/rdma-core</A>
@@ -14690,6 +14758,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://network.nvidia.com/products/infiniband-drivers/linux/mlnx_ofed/">Linux InfiniBand Drivers</A>
 									<DT><A HREF="https://ubuntu.com/server/docs/nvidia-drivers-installation">NVIDIA drivers installation | Ubuntu</A>
 									<DT><A HREF="https://github.com/developer-onizuka/gpudirect_storage">developer-onizuka/gpudirect_storage (global view)</A>
+									<DT><A HREF="https://github.com/pytorch/pytorch/blob/main/torch/cuda/gds.py">pytorch/torch/cuda/gds.py at main · pytorch/pytorch</A>
 								</DL><p>
 								<DT><H3 FOLDED>cuFile</H3>
 								<DL><p>
@@ -14708,6 +14777,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://github.com/NVIDIA/apex/blob/810ffae374a2b9cb4b5c5e28eaeca7d7998fca0c/apex/contrib/csrc/gpu_direct_storage/gds.cpp">apex/apex/contrib/csrc/gpu_direct_storage/gds.cpp</A>
 									<DT><A HREF="https://github.com/NVIDIA/MagnumIO/blob/main/gds/samples/cufile_sample_022.cc">cuFile Batch APIs</A>
 									<DT><A HREF="https://chat.openai.com/c/61bb588b-35a7-42a6-90e9-c2355e5646a9">Identify Disk Storage Type</A>
+									<DT><A HREF="https://github.com/pytorch/pytorch/blob/main/torch/cuda/gds.py">pytorch/torch/cuda/gds.py at main · pytorch/pytorch</A>
 								</DL><p>
 								<DT><H3 FOLDED>ugds</H3>
 								<DL><p>
@@ -14833,14 +14903,18 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									</DL><p>
 									<DT><H3 FOLDED>nvtop</H3>
 									<DL><p>
+										<DT><H3 FOLDED>lscpi</H3>
+										<DL><p>
+											<DT><A HREF="https://www.youtube.com/watch?v=awOxxHnsiv0">George Hotz: lscpi | grep 300 -&gt; MI300X</A>
+											<DT><A HREF="https://github.com/datacrunch-research/configuration/blob/master/setup.sh">configuration/setup.sh at master · datacrunch-research/configuration</A>
+										</DL><p>
 										<DT><A HREF="https://github.com/Syllo/nvtop">Syllo/nvtop: GPU &amp; Accelerator process monitoring for AMD, Apple, Huawei, Intel, NVIDIA and Qualcomm</A>
 									</DL><p>
-									<DT><H3 FOLDED>lscpi</H3>
-									<DL><p>
-										<DT><A HREF="https://www.youtube.com/watch?v=awOxxHnsiv0">George Hotz: lscpi | grep 300 -&gt; MI300X</A>
-										<DT><A HREF="https://github.com/datacrunch-research/configuration/blob/master/setup.sh">configuration/setup.sh at master · datacrunch-research/configuration</A>
-									</DL><p>
 									<DT><A HREF="https://github.com/wookayin/gpustat">wookayin/gpustat: 📊 A simple command-line utility for querying and monitoring GPU status</A>
+									<DT><H3 FOLDED>nvtop-mnnvl</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/lablup/all-smi">lablup/all-smi: Command-line utility for monitoring GPU hardware.</A>
+									</DL><p>
 								</DL><p>
 							</DL><p>
 							<DT><H3 FOLDED>Nvidia-instruction-set-architecture</H3>
@@ -16101,7 +16175,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 								<DT><A HREF="https://github.com/EleutherAI/cookbook/tree/main/benchmarks/sizing">cookbook/benchmarks/sizing at main · EleutherAI/cookbook</A>
 								<DT><A HREF="https://github.com/EleutherAI/cookbook/blob/main/benchmarks/sizing/bmm_flops.py">cookbook/benchmarks/sizing/bmm_flops.py at main · EleutherAI/cookbook</A>
 							</DL><p>
-							<DT><H3 FOLDED>linalg: standard Linear Algebra</H3>
+							<DT><H3 FOLDED>linalg</H3>
 							<DL><p>
 								<DT><H3 FOLDED>BLAS</H3>
 								<DL><p>
@@ -16131,6 +16205,14 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://github.com/microsoft/BitBLAS">microsoft/BitBLAS: BitBLAS is a library to support mixed-precision matrix multiplications, especially for quantized LLM deployment.</A>
 									<DT><A HREF="https://github.com/tinygrad/tinygrad/blob/fd27f19e9231160939da8a3a23434b4ae8ce51ee/docs/tensor/ops.md?plain=1">tinygrad/docs/tensor/ops.md</A>
 								</DL><p>
+								<DT><H3 FOLDED>jacobi methods</H3>
+								<DL><p>
+									<DT><A HREF="https://www.gpumode.com/news/linear-algebra-kernels-age-of-research">Linear Algebra Kernels For The Age Of Research</A>
+									<DT><A HREF="https://www.gpumode.com/leaderboard/775?tab=rankings">GPU MODE</A>
+									<DT><A HREF="https://arxiv.org/pdf/2506.03466">Minimizing the Arithmetic and Communication Complexity of Jacobi’s Method for Eigenvalues and Singular Values: Part One - Serial Algorithms</A>
+									<DT><A HREF="https://web.stanford.edu/class/cme335/lecture7.pdf">Jacobi Methods</A>
+									<DT><A HREF="https://x.com/_arohan_/status/2071832916020297893">(5) rohan anil en X: "Multiple folks including @typedfemale and Jim Demmel, Inderjit Dhillon, and Ryan Schenider suggested looking at Jacobi methods for fast eigh. The blocked Jacobi version looks like a great fit on GPUs https://t.co/KpNjTyhAil" / X</A>
+								</DL><p>
 								<DT><A HREF="https://www.netlib.org/blas/blast-forum/blas-report.pdf">Basic Linear Algebra Subprograms Technial (BLAST)</A>
 								<DT><A HREF="https://en.cppreference.com/w/cpp/numeric/linalg">Basic linear algebra algorithms (since C++26) - cppreference.com</A>
 								<DT><A HREF="https://numpy.org/doc/stable/reference/routines.linalg.html">Linear algebra (numpy.linalg) — NumPy v1.26 Manual</A>
@@ -16140,6 +16222,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 								<DT><A HREF="https://github.com/flame/blislab?tab=readme-ov-file">flame/blislab: BLISlab: A Sandbox for Optimizing GEMM</A>
 								<DT><A HREF="https://developer.nvidia.com/blog/cutlass-linear-algebra-cuda/">CUTLASS: Fast Linear Algebra in CUDA C++ | NVIDIA Technical Blog</A>
 								<DT><A HREF="https://github.com/tinygrad/tinygrad/blob/c4fdb9c725924fd1bc8a89ca07a1f405953b4d54/docs/tensor/ops.md?plain=1#L2">tinygrad/docs/tensor/ops.md</A>
+								<DT><A HREF="https://ml-mike.com/writing/qr_v2/">QR Decomp at the Speed of Light</A>
 							</DL><p>
 							<DT><H3 FOLDED>tilelang</H3>
 							<DL><p>
@@ -17404,6 +17487,10 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 											<DT><A HREF="https://github.com/pytorch/pytorch/blob/main/torch/_dynamo/utils.py#L662">pytorch/torch/_dynamo/utils.py at main · pytorch/pytorch</A>
 										</DL><p>
 									</DL><p>
+									<DT><H3 FOLDED>depyf</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/thuml/depyf">thuml/depyf: understand and adapt to PyTorch compiler</A>
+									</DL><p>
 									<DT><A HREF="https://www.youtube.com/watch?v=egZB5Uxki0I">torchdynamo deep dive - YouTube</A>
 									<DT><A HREF="https://pytorch.org/docs/stable/torch.compiler_dynamo_deepdive.html">Dynamo Deep-Dive — PyTorch 2.6 documentation</A>
 									<DT><A HREF="https://github.com/pytorch/workshops/blob/master/ASPLOS_2024/dynamo_example.pdf">workshops/ASPLOS_2024/dynamo_example.pdf at master · pytorch/workshops</A>
@@ -17413,7 +17500,6 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=w30xteQDeO8">Lightning Talk: PT2 Export - A Sound Full Graph Capture Mechanism for PyTorch - Avik Chaudhuri, Meta - YouTube</A>
 									<DT><A HREF="https://github.com/Skylion007/pytorch/blob/ad8448497290394b50f84a2932fcb4f078793b3f/test/dynamo/test_functions.py#L1603">pytorch/test/dynamo/test_functions.py</A>
 									<DT><A HREF="https://github.com/thuml/learn_torch.compile">thuml/learn_torch.compile: torch.compile artifacts for common deep learning models</A>
-									<DT><A HREF="https://github.com/thuml/depyf">thuml/depyf: understand and adapt to PyTorch compiler</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=w30xteQDeO8">Export - A Sound Full Graph Capture Mechanism for PyTorch</A>
 									<DT><A HREF="https://dev-discuss.pytorch.org/t/a-torchdynamo-trace-time-ablation-study/1961">A TorchDynamo trace time ablation study - compiler - PyTorch Developer Mailing List</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=X6RXkTXQOb0">Debugging torchdynamo symbolic shapes: Part 2 - YouTube</A>
@@ -18519,6 +18605,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://fkong.tech/posts/2023-05-31-torch-graph/">50 lines of code to capture PyTorch forward and reverse computation graphs</A>
 									<DT><A HREF="https://github.com/alpha0422/torch-graph/tree/main">alpha0422/torch-graph: Simple PyTorch graph capturing.</A>
 								</DL><p>
+								<DT><A HREF="https://github.com/stas00/the-art-of-debugging/tree/master/pytorch">the-art-of-debugging/pytorch at master · stas00/the-art-of-debugging</A>
 								<DT><A HREF="https://github.com/zasdfgbnm/TorchSnooper">zasdfgbnm/TorchSnooper: Debug PyTorch code using PySnooper</A>
 								<DT><A HREF="https://github.com/xl0/lovely-tensors">xl0/lovely-tensors: Tensors, for human consumption</A>
 								<DT><A HREF="https://github.com/graphcore-research/pytorch-tensor-tracker">graphcore-research/pytorch-tensor-tracker: Flexibly track outputs and grad-outputs of torch.nn.Module.</A>
@@ -18536,7 +18623,6 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 								<DT><A HREF="https://fkong.tech/posts/2023-05-24-torch-source/">Some thoughts on reading PyTorch source code</A>
 								<DT><A HREF="https://github.com/stas00/the-art-of-debugging/tree/master/pytorch#memory-usage">the-art-of-debugging/pytorch at master · stas00/the-art-of-debugging</A>
 								<DT><A HREF="https://github.com/stas00/the-art-of-debugging/tree/master">stas00/the-art-of-debugging: The Art of Debugging</A>
-								<DT><A HREF="https://github.com/stas00/the-art-of-debugging/tree/master/pytorch#2-editing-the-config-object-on-the-fly">the-art-of-debugging/pytorch at master · stas00/the-art-of-debugging</A>
 							</DL><p>
 							<DT><H3 FOLDED>torch-inference</H3>
 							<DL><p>
@@ -18897,6 +18983,7 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://github.com/zhaochenyang20/Awesome-ML-SYS-Tutorial/tree/main/torch-distributed">dist.barrier(device_ids=[0], group=pg)</A>
 									<DT><A HREF="https://pytorch.org/tutorials/beginner/hta_intro_tutorial.html">Introduction to Holistic Trace Analysis — PyTorch Tutorials 2.6.0+cu124 documentation</A>
 									<DT><A HREF="https://github.com/microsoft/debugpy/issues/783">use vscode to remote debug python program with tmux session · Issue #783 · microsoft/debugpy</A>
+									<DT><A HREF="https://github.com/stas00/the-art-of-debugging/tree/master/pytorch">the-art-of-debugging/pytorch at master · stas00/the-art-of-debugging</A>
 								</DL><p>
 								<DT><H3 FOLDED>torch-distributed-utils</H3>
 								<DL><p>
@@ -20064,7 +20151,6 @@ Physical AI. Embodied Agents. Robotics. That's what's next.</A>
 									<DT><A HREF="https://github.com/Deep-Learning-Profiling-Tools/triton-viz/blob/main/examples/sanitizer/gemm_oob.py">triton-viz/examples/sanitizer/gemm_oob.py sanitizer</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=RwqdPXBSMCE&t=3040s">Triton Community Meetup 20260505 - YouTube</A>
 								</DL><p>
-								<DT><A HREF="https://github.com/linkedin/Liger-Kernel/blob/63dd41b15e9f1c2957c817b771536d4ab7119322/test/transformers/test_rms_norm.py#L72">triton kernel correctness testing</A>
 								<DT><A HREF="https://github.com/linkedin/Liger-Kernel/blob/63dd41b15e9f1c2957c817b771536d4ab7119322/test/transformers/test_rms_norm.py#L72">triton kernel correctness testing</A>
 								<DT><A HREF="https://github.com/sgl-project/sglang/blob/main/test/srt/test_triton_attention_kernels.py">sglang/test/srt/test_triton_attention_kernels.py</A>
 								<DT><A HREF="https://github.com/sgl-project/sglang/blob/main/python/sglang/test/test_activation.py">sglang/python/sglang/test/test_activation.py</A>
@@ -22237,6 +22323,15 @@ Programming Guide</A>
 							</DL><p>
 							<DT><H3 FOLDED>serving-kv</H3>
 							<DL><p>
+								<DT><H3 FOLDED>nixl</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/ai-dynamo/nixl">ai-dynamo/nixl: NVIDIA Inference Xfer Library (NIXL)</A>
+									<DT><A HREF="https://engineers.ntt.com/entry/202505-nixl/entry">LLM推論を支える抽象化転送ライブラリ NVIDIA Inference Xfer Library (NIXL) について - NTT docomo Business Engineers' Blog</A>
+									<DT><A HREF="https://github.com/ai-dynamo/nixl/blob/main/benchmark/kvbench/README.md">nixl/benchmark/kvbench/README.md at main · ai-dynamo/nixl</A>
+									<DT><A HREF="https://www.youtube.com/watch?v=87T-irSjXfE&list=PL_lsbAsL_o2BUUxo6coMBFwQE31U4Eb2q&index=139">Scaling KV Caches for LLMs: How LMCache + NIXL Handle Network and Storage...- J. Jiang &amp; M. Khazraee - YouTube</A>
+									<DT><A HREF="https://developer.nvidia.com/blog/enhancing-distributed-inference-performance-with-the-nvidia-inference-transfer-library/">Enhancing Distributed Inference Performance with the NVIDIA Inference Transfer Library | NVIDIA Technical Blog</A>
+									<DT><A HREF="https://llm-d.ai/blog/networking-for-distributed-inference-llm-d">Networking for Distributed Inference in llm-d | llm-d</A>
+								</DL><p>
 								<DT><H3 FOLDED>lmcache</H3>
 								<DL><p>
 									<DT><H3 FOLDED>lmcache-benchmark</H3>
@@ -22247,10 +22342,15 @@ Programming Guide</A>
 									<DL><p>
 										<DT><A HREF="https://github.com/glbyktjys/lmcache-mp-transfer-paths-tutorial/blob/main/cache_validation.sh">lmcache-mp-transfer-paths-tutorial/cache_validation.sh at main · glbyktjys/lmcache-mp-transfer-paths-tutorial shares no prefix with prompt A — used for the negative (miss) test.</A>
 									</DL><p>
+									<DT><H3 FOLDED>lmcache-gds</H3>
+									<DL><p>
+										<DT><A HREF="https://docs.lmcache.ai/kv_cache/gds.html">GDS Backend | LMCache</A>
+									</DL><p>
 									<DT><A HREF="https://github.com/LMCache/LMCache">LMCache/LMCache: Supercharge Your LLM with the Fastest KV Cache Layer</A>
 									<DT><A HREF="https://blog.lmcache.ai/en/2026/06/15/understanding-lmcache-mp-mode-transfer-paths-a-beginners-guide/">Understanding LMCache MP Mode Transfer Paths: A Beginner’s Guide | LMCache Blog</A>
 									<DT><A HREF="https://github.com/glbyktjys/lmcache-mp-transfer-paths-tutorial">glbyktjys/lmcache-mp-transfer-paths-tutorial</A>
 									<DT><A HREF="https://docs.lmcache.ai/mp/configuration.html#gds-l1-tier">Configuration Reference | LMCache</A>
+									<DT><A HREF="https://arxiv.org/abs/2510.09665">[2510.09665] LMCache: An Efficient KV Cache Layer for Enterprise-Scale LLM Inference</A>
 								</DL><p>
 								<DT><H3 FOLDED>ShadowKV</H3>
 								<DL><p>
@@ -22635,6 +22735,8 @@ Programming Guide</A>
 							<DL><p>
 								<DT><H3 FOLDED>mooncake-transfer-engine</H3>
 								<DL><p>
+									<DT><A HREF="https://www.lmsys.org/blog/2026-04-29-p2p-update/">Updating 1T parameters in seconds — P2P weight transfer in Large Scale Distributed RL - LMSYS Blog | LMSYS Org</A>
+									<DT><A HREF="https://kvcache-ai.github.io/Mooncake/design/transfer-engine/index.html">Mooncake Transfer Engine — Mooncake</A>
 								</DL><p>
 								<DT><H3 FOLDED>mooncacke-benchmarking</H3>
 								<DL><p>
@@ -22667,6 +22769,7 @@ Programming Guide</A>
 								</DL><p>
 								<DT><H3 FOLDED>mooncake-store</H3>
 								<DL><p>
+									<DT><A HREF="https://www.usenix.org/system/files/fast25_slides-qin.pdf">Trading More Storage for Less Computation – A KVCache-centric Architecture for Serving LLM Chatbot</A>
 								</DL><p>
 								<DT><H3 FOLDED>pegaflow</H3>
 								<DL><p>
@@ -22681,6 +22784,12 @@ Programming Guide</A>
 								<DT><A HREF="https://github.com/novitalabs/pegaflow">novitalabs/pegaflow</A>
 								<DT><A HREF="https://github.com/alibaba/tair-kvcache">alibaba/tair-kvcache: Tair KVCache is Alibaba Cloud's high-performance KVCache system designed for Large Language Model (LLM) inference scenarios</A>
 								<DT><A HREF="https://kvcache.ai/tools/kv-cache-analyzer/">KV Cache Hit Rate Simulator | KVCache.AI</A>
+								<DT><A HREF="https://www.usenix.org/conference/fast25/presentation/qin">Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot | USENIX</A>
+								<DT><A HREF="https://haoailab.com/blogs/distserve-retro/">Disaggregated Inference: 18 Months Later | Hao AI Lab @ UCSD</A>
+								<DT><A HREF="https://www.youtube.com/watch?v=-Lpx9QuCEsw">FAST '25 - Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture... - YouTube</A>
+								<DT><A HREF="https://github.com/kvcache-ai/Mooncake/blob/bcae44d0704b2188c455846d997d2af218ca71ba/docs/source/zh_archive/vllm-integration-v1.md#L4">Mooncake/docs/source/zh_archive/vllm-integration-v1.md at bcae44d0704b2188c455846d997d2af218ca71ba · kvcache-ai/Mooncake</A>
+								<DT><A HREF="https://github.com/vllm-project/vllm/pull/12957">test the connect of moon master,is ok: $ telnet -e quit 172.16.0.11 500001</A>
+								<DT><A HREF="https://www.usenix.org/system/files/fast25-qin.pdf">Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot</A>
 							</DL><p>
 							<DT><H3 FOLDED>SGLang</H3>
 							<DL><p>
@@ -23361,6 +23470,8 @@ Programming Guide</A>
 										<DT><A HREF="https://www.cerebras.ai/blog/disaggregated-inference">heterogenous prefill-decode dissagregatio using Cerebras</A>
 										<DT><A HREF="https://www.anyscale.com/blog/high-performance-distributed-inference-ray-serve-llm-vllm-google-kubernetes-gke">High Performance Distributed Inference with Ray Serve LLM | Anyscale</A>
 										<DT><A HREF="https://www.anyscale.com/blog/ray-vllm-prefill-decode-disaggregation-amd-mi325x-67-percent-savings">Core Intuition – Why PD Works (and When It Doesn't)</A>
+										<DT><A HREF="https://llm-d.ai/blog/llm-d-v0.2-our-first-well-lit-paths#improved-benchmarking-suite">Llama 4 Scout 17B 16E Instruct FP8 2 nodes (IB): 8xH200s pd dissagregation</A>
+										<DT><A HREF="https://www.usenix.org/conference/osdi24/presentation/agrawal">Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve | USENIX</A>
 									</DL><p>
 									<DT><H3 FOLDED>pd-long-prefill</H3>
 									<DL><p>
@@ -23387,10 +23498,24 @@ Programming Guide</A>
 									</DL><p>
 									<DT><H3 FOLDED>distServe</H3>
 									<DL><p>
+										<DT><H3 FOLDED>Splitwise</H3>
+										<DL><p>
+											<DT><A HREF="https://arxiv.org/abs/2311.18677">[2311.18677] Splitwise: Efficient generative LLM inference using phase splitting</A>
+										</DL><p>
 										<DT><A HREF="https://arxiv.org/abs/2401.09670">[2401.09670] DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving</A>
+										<DT><A HREF="https://haoailab.com/blogs/distserve/">Throughput is Not All You Need: Maximizing Goodput in LLM Serving using Prefill-Decode Disaggregation | Hao AI Lab @ UCSD</A>
+										<DT><A HREF="https://vllm-website-ngk8onerf-inferact-inc.vercel.app/blog/moriio-kv-connector#ref-3">We use goodput as the primary metric, following the DistServe methodology: Goodput = maximum request rate (req/s) such that requests satisfy both TTFT &lt; T_ttft and ITL &lt; T_itl</A>
 									</DL><p>
 									<DT><H3 FOLDED>sgl-pd-disaggregation</H3>
 									<DL><p>
+										<DT><H3 FOLDED>sgl-pd-dpsk</H3>
+										<DL><p>
+											<DT><A HREF="https://www.lmsys.org/blog/2025-05-05-large-scale-ep/">Deploying DeepSeek with PD Disaggregation and Large-Scale Expert Parallelism on 96 H100 GPUs - LMSYS Org</A>
+											<DT><A HREF="https://www.lmsys.org/blog/2025-06-16-gb200-part-1">Deploying DeepSeek on GB200 NVL72 with PD and Large Scale EP (Part I): 2.7x Higher Decoding Throughput - LMSYS Org</A>
+											<DT><A HREF="https://www.lmsys.org/blog/2026-04-25-deepseek-v4">DeepSeek-V4 on Day 0: From Fast Inference to Verified RL with SGLang and Miles - LMSYS Org</A>
+											<DT><A HREF="https://www.lmsys.org/blog/2026-02-19-gb300-longctx">Deploying DeepSeek on GB300 NVL72: Big Wins in Long-Context Inference - LMSYS Org</A>
+											<DT><A HREF="https://www.lmsys.org/blog/2025-09-25-gb200-part-2">Deploying DeepSeek on GB200 NVL72 with PD and Large Scale EP (Part II): 3.8x Prefill, 4.8x Decode Throughput - LMSYS Org</A>
+										</DL><p>
 										<DT><H3 FOLDED>sgl-prefill</H3>
 										<DL><p>
 											<DT><H3 FOLDED>prefill-cp</H3>
@@ -23417,6 +23542,14 @@ Programming Guide</A>
 											<DL><p>
 												<DT><A HREF="https://www.lmsys.org/blog/2026-03-25-eep-partial-failure-tolerance/">Elastic EP in SGLang: Achieving Partial Failure Tolerance for DeepSeek MoE Deployments - LMSYS Blog | LMSYS Org</A>
 												<DT><A HREF="https://claude.ai/chat/5d253884-a8d9-4cb9-b553-f180306f6c4a">Searching for EPLBManager deepseek deepep - Claude</A>
+											</DL><p>
+											<DT><H3 FOLDED>deepEP-routing-simulator</H3>
+											<DL><p>
+												<DT><A HREF="https://github.com/sgl-project/sglang/issues/20307">[Feature] MoE Routing Simulator for Expert Load Imbalance Profiling · Issue #20307 · sgl-project/sglang</A>
+												<DT><A HREF="https://github.com/NVIDIA/TensorRT-LLM/blob/04cefe271daceb491dbdacb0fcd8f1a174c10c16/docs/source/developer-guide/perf-analysis.md?plain=1#L106">TensorRT-LLM: ENABLE_PERFECT_ROUTER to allow MoE expert load balance analsys (perfect router)</A>
+												<DT><A HREF="https://github.com/vllm-project/vllm/blob/main/vllm/model_executor/layers/fused_moe/router/routing_simulator_router.py">vllm/vllm/model_executor/layers/fused_moe/router/routing_simulator_router.py at main · vllm-project/vllm</A>
+												<DT><A HREF="https://github.com/vllm-project/vllm/blob/4e5ca89cfe98121642d76b40e32a006f4d0fbf3b/tests/kernels/moe/test_routing_simulator.py#L23">vllm/tests/kernels/moe/test_routing_simulator.py</A>
+												<DT><A HREF="https://github.com/vllm-project/vllm/commit/82216dc21f777584bcf53ab1fe4936390c1737bf">[Misc] Support routing logic simulation (#21990) · vllm-project/vllm@82216dc</A>
 											</DL><p>
 											<DT><A HREF="https://github.com/sgl-project/sglang/pull/17289/changes">Overlap shared experts with deepep dispatch for single batch overlap on Blackwell by Fridge003 · Pull Request #17289 · sgl-project/sglang</A>
 										</DL><p>
@@ -23640,13 +23773,6 @@ Programming Guide</A>
 								<DL><p>
 									<DT><H3 FOLDED>sgl-gds</H3>
 									<DL><p>
-										<DT><H3 FOLDED>nixl</H3>
-										<DL><p>
-											<DT><A HREF="https://github.com/ai-dynamo/nixl">ai-dynamo/nixl: NVIDIA Inference Xfer Library (NIXL)</A>
-											<DT><A HREF="https://engineers.ntt.com/entry/202505-nixl/entry">LLM推論を支える抽象化転送ライブラリ NVIDIA Inference Xfer Library (NIXL) について - NTT docomo Business Engineers' Blog</A>
-											<DT><A HREF="https://github.com/ai-dynamo/nixl/blob/main/benchmark/kvbench/README.md">nixl/benchmark/kvbench/README.md at main · ai-dynamo/nixl</A>
-											<DT><A HREF="https://www.youtube.com/watch?v=87T-irSjXfE&list=PL_lsbAsL_o2BUUxo6coMBFwQE31U4Eb2q&index=139">Scaling KV Caches for LLMs: How LMCache + NIXL Handle Network and Storage...- J. Jiang &amp; M. Khazraee - YouTube</A>
-										</DL><p>
 										<DT><A HREF="https://github.com/sgl-project/sglang/pull/7896/files">Add GDS alternative for hierarchical kv cache by didoteebin · Pull Request #7896 · sgl-project/sglang</A>
 									</DL><p>
 									<DT><H3 FOLDED>kvcached</H3>
@@ -23781,6 +23907,7 @@ Programming Guide</A>
 									<DT><H3 FOLDED>sgl-dflash</H3>
 									<DL><p>
 										<DT><A HREF="https://mimo.xiaomi.com/blog/mimo-tilert-1000tps">MiMo-V2.5-Pro-UltraSpeed: Pushing 1T-Parameter Model Generation Speed to 1000 TPS</A>
+										<DT><A HREF="https://github.com/z-lab/dflash/blob/2772051a4ffe8e4460dc7ede99bb77978c657640/benchmark.py">dflash/benchmark.py basic not highly performant DFlash original implementation</A>
 										<DT><A HREF="https://coreweave.com/blog/kimi-k2-7-code-now-available-on-serverless-inference-with-leading-benchmark-price-performance?utm_campaign=_2026-q2_global_inference_&utm_medium=organic&utm_source=twitter-&utm_content=kimi-k2.7-benchmarks_blg">CoreWeave Leads on Artificial Analysis for Kimi K2.7 Code Inference | CoreWeave Blog</A>
 										<DT><A HREF="https://modal.com/blog/spec-is-all-u-need">Speculation Is All You Need</A>
 										<DT><A HREF="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/">The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Org</A>
@@ -23972,7 +24099,20 @@ Programming Guide</A>
 										</DL><p>
 										<DT><H3 FOLDED>vllm-continuous-batching</H3>
 										<DL><p>
-											<DT><A HREF="https://www.usenix.org/system/files/osdi22-yu.pdf">Orca: Iteration-level scheduling</A>
+											<DT><H3 FOLDED>orca</H3>
+											<DL><p>
+												<DT><A HREF="https://www.usenix.org/system/files/osdi22-yu.pdf">Orca: Iteration-level scheduling</A>
+											</DL><p>
+											<DT><H3 FOLDED>chunked prefill</H3>
+											<DL><p>
+												<DT><H3 FOLDED>sarathi-serve</H3>
+												<DL><p>
+													<DT><A HREF="https://github.com/microsoft/sarathi-serve">microsoft/sarathi-serve: A low-latency &amp; high-throughput serving engine for LLMs</A>
+													<DT><A HREF="https://www.youtube.com/watch?v=-Lpx9QuCEsw">FAST '25 - Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture... - YouTube</A>
+													<DT><A HREF="https://www.usenix.org/conference/osdi24/presentation/agrawal">Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve | USENIX</A>
+												</DL><p>
+												<DT><A HREF="https://www.usenix.org/conference/osdi24/presentation/agrawal">Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve | USENIX</A>
+											</DL><p>
 											<DT><A HREF="https://twitter.com/edacih/status/1671885000030191616">Continuous batching &amp; PagedAttention (TW thread)</A>
 											<DT><A HREF="https://www.anyscale.com/blog/continuous-batching-llm-inference">Continuous batching &amp; PagedAttention</A>
 											<DT><A HREF="https://huggingface.co/blog/continuous_batching">Continuous batching from first principles</A>
@@ -23983,6 +24123,10 @@ Programming Guide</A>
 									<DL><p>
 										<DT><H3 FOLDED>vllm-dflash</H3>
 										<DL><p>
+											<DT><H3 FOLDED>dflash-theory</H3>
+											<DL><p>
+												<DT><A HREF="https://github.com/z-lab/dflash/blob/2772051a4ffe8e4460dc7ede99bb77978c657640/benchmark.py">dflash/benchmark.py basic not highly performant DFlash original implementation</A>
+											</DL><p>
 											<DT><A HREF="https://developer.nvidia.com/blog/boost-inference-performance-up-to-15x-on-nvidia-blackwell-using-dflash-speculative-decoding/">Boost Inference Performance up to 15x on NVIDIA Blackwell Using DFlash Speculative Decoding | NVIDIA Technical Blog</A>
 											<DT><A HREF="https://coreweave.com/blog/kimi-k2-7-code-now-available-on-serverless-inference-with-leading-benchmark-price-performance?utm_campaign=_2026-q2_global_inference_&utm_medium=organic&utm_source=twitter-&utm_content=kimi-k2.7-benchmarks_blg">CoreWeave Leads on Artificial Analysis for Kimi K2.7 Code Inference | CoreWeave Blog</A>
 										</DL><p>
@@ -24091,6 +24235,25 @@ Programming Guide</A>
 										<DT><A HREF="https://github.com/vllm-project/vllm/issues/42515">[RFC]: External Elastic EP Scaling · Issue #42515 · vllm-project/vllm</A>
 										<DT><A HREF="https://github.com/vllm-project/vllm/issues/39942">[RFC]: Fault-Tolerant EP Collectives and Fault-Aware EPLB · Issue #39942 · vllm-project/vllm</A>
 									</DL><p>
+									<DT><H3 FOLDED>vllm-pd-mooncake-store</H3>
+									<DL><p>
+										<DT><H3 FOLDED>vllm-pd-mooncake-1p1d</H3>
+										<DL><p>
+											<DT><A HREF="https://github.com/vllm-project/vllm/pull/10884">Phase 1: 1P1D Support : [Core] Support disaggregated prefill with Mooncake Transfer Engine by ShangmingCai</A>
+										</DL><p>
+										<DT><H3 FOLDED>vllm-pd-mooncake-XpYd</H3>
+										<DL><p>
+											<DT><A HREF="https://github.com/vllm-project/vllm/pull/12957">[Feature][Disaggregated] Support XpYd disaggregated prefill with MooncakeStore by ShangmingCai · Pull Request #12957 · vllm-project/vllm</A>
+											<DT><A HREF="https://github.com/kvcache-ai/Mooncake/issues/180">Connection refused error when using mooncake store as kvcache store for XpYd disaggregation · Issue #180 · kvcache-ai/Mooncake</A>
+											<DT><A HREF="https://docs.google.com/document/d/1Ab6TMW1E2CdHJJyCrpJnLhgmE2b_6leH5MVP9k72sjw/edit?tab=t.0">P/D Disaggregation of vLLM and Integration with Mooncake - Google Docs</A>
+										</DL><p>
+										<DT><A HREF="https://docs.google.com/document/d/1Ab6TMW1E2CdHJJyCrpJnLhgmE2b_6leH5MVP9k72sjw/edit?tab=t.0#heading=h.611v2r4aqubz">P/D Disaggregation of vLLM and Integration with Mooncake - Google Docs</A>
+										<DT><A HREF="https://github.com/kvcache-ai/Mooncake/blob/main/docs/source/zh_archive/vllm-integration-v0.1.md">Mooncake/docs/source/zh_archive/vllm-integration-v0.1.md fork integration</A>
+									</DL><p>
+									<DT><H3 FOLDED>vllm-pd-uccl</H3>
+									<DL><p>
+										<DT><A HREF="https://llm-d.ai/blog/networking-for-distributed-inference-llm-d">Networking for Distributed Inference in llm-d | llm-d</A>
+									</DL><p>
 									<DT><A HREF="https://blog.vllm.ai/2025/12/17/large-scale-serving.html">vLLM Large Scale Serving: DeepSeek @ 2.2k tok/s/H200 with Wide-EP | vLLM Blog</A>
 									<DT><A HREF="https://www.youtube.com/watch?v=6m6ZE6yVEDI&t=4381s">[vLLM Office Hours #36] LIVE from Zürich vLLM Meetup - November 6, 2025 - YouTube</A>
 									<DT><A HREF="https://zhuanlan.zhihu.com/p/2015150040209970745">vllm v1 code walkthrough - PD separation</A>
@@ -24108,14 +24271,25 @@ Programming Guide</A>
 									<DL><p>
 									</DL><p>
 								</DL><p>
-								<DT><H3 FOLDED>vllm-benchmark</H3>
+								<DT><H3 FOLDED>vllm-benchmarks</H3>
 								<DL><p>
+									<DT><H3 FOLDED>vllm-bench</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/vllm-project/vllm/tree/main/.buildkite/performance-benchmarks">vllm/.buildkite/performance-benchmarks at main · vllm-project/vllm</A>
+										<DT><A HREF="https://github.com/vllm-project/vllm/blob/4e5ca89cfe98121642d76b40e32a006f4d0fbf3b/benchmarks/benchmark_serving.py#L10">vllm/benchmarks/benchmark_serving.py</A>
+									</DL><p>
+									<DT><H3 FOLDED>vllm-bench-rust</H3>
+									<DL><p>
+										<DT><A HREF="https://github.com/vllm-project/vllm-bench">vllm-project/vllm-bench: High-performance Rust benchmark client for vLLM serving endpoints.</A>
+										<DT><A HREF="https://github.com/hatoo/oha">hatoo/oha: Ohayou(おはよう), HTTP load generator, inspired by rakyll/hey with tui animation.</A>
+									</DL><p>
 									<DT><H3 FOLDED>guidellm</H3>
 									<DL><p>
 										<DT><A HREF="https://github.com/vllm-project/guidellm">vllm-project/guidellm: Evaluate and Enhance Your LLM Deployments for Real-World Inference Needs</A>
 									</DL><p>
 									<DT><A HREF="https://github.com/vllm-project/vllm/blob/fa32207842f1ed5a966372ed0513914bff8426c4/benchmarks/launch_tgi_server.sh#L4">vllm/benchmarks/launch_tgi_server.sh</A>
 									<DT><A HREF="https://github.com/vllm-project/vllm/blob/fa32207842f1ed5a966372ed0513914bff8426c4/benchmarks/benchmark_throughput.py#L200">vllm/benchmarks/benchmark_throughput.py</A>
+									<DT><A HREF="https://github.com/openinfer-project/openinfer/blob/main/.claude/skills/vllm-bench/SKILL.md">openinfer/.claude/skills/vllm-bench/SKILL.md at main · openinfer-project/openinfer</A>
 								</DL><p>
 								<DT><H3 FOLDED>vllm-profiling</H3>
 								<DL><p>
@@ -24136,6 +24310,8 @@ Programming Guide</A>
 										<DT><A HREF="https://recipes.vllm.ai/moonshotai/Kimi-K2.6?hardware=b300&variant=nvfp4&nodes=2&strategy=multi_node_dep">moonshotai/Kimi-K2.6 | vLLM Recipes</A>
 										<DT><A HREF="https://www.anyscale.com/blog/high-performance-distributed-inference-ray-serve-llm-vllm-google-kubernetes-gke">High Performance Distributed Inference with Ray Serve LLM | Anyscale</A>
 										<DT><A HREF="https://www.anyscale.com/blog/ray-serve-llm-anyscale-apis-wide-ep-disaggregated-serving-vllm">Ray Serve LLM on Anyscale: Wide-EP and Disaggregated Serving with vLLM</A>
+										<DT><A HREF="https://llm-d.ai/blog/llm-d-v0.2-our-first-well-lit-paths#improved-benchmarking-suite">llm-d 0.2: Our first well-lit paths (mind the tree roots!) | llm-d</A>
+										<DT><A HREF="https://llm-d.ai/blog/llm-d-v0.3-expanded-hardware-faster-perf-and-igw-ga">llm-d 0.3: Wider Well-Lit Paths for Scalable Inference | llm-d</A>
 									</DL><p>
 									<DT><A HREF="https://docs.vllm.ai/en/latest/serving/expert_parallel_deployment/#eplb-parameters">Expert Parallel Deployment - vLLM</A>
 								</DL><p>
@@ -24293,6 +24469,8 @@ Programming Guide</A>
 								<DT><A HREF="https://open-infer.org/blog/openinfer-010/">OpenInfer 0.1.0: Writing a Production-Grade Inference Engine in Rust | openinfer</A>
 								<DT><A HREF="https://open-infer.org/blog/green-ctx/">Co-locating Prefill and Decode on One GPU: Green Contexts for Higher Throughput | openinfer</A>
 								<DT><A HREF="https://www.together.ai/blog/cache-aware-disaggregated-inference">Cache-aware prefill–decode disaggregation (CPD) for up to 40% faster long-context LLM serving</A>
+								<DT><A HREF="https://github.com/openinfer-project/openinfer">openinfer-project/openinfer: Pure Rust + CUDA LLM inference engine — no PyTorch, OpenAI-compatible, serves Qwen3 to Kimi-K2</A>
+								<DT><A HREF="https://openedinfer.com/blog/cuda-graph-export/">See Qwen3 Decode as a CUDA Graph | openinfer</A>
 							</DL><p>
 							<DT><H3 FOLDED>ktransformers</H3>
 							<DL><p>
@@ -26797,8 +26975,12 @@ Programming Guide</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=-ZtyRgD1c40">Velox and Composable Data Management - Pedro Pedreira, Meta - YouTube</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=bISBNVtXZ6M&t=1169s">Nimble, A New Columnar File Format - Yoav Helfman, Meta - YouTube</A>
 							</DL><p>
-							<DT><H3 FOLDED>os-emulation</H3>
+							<DT><H3 FOLDED>qemu</H3>
 							<DL><p>
+								<DT><H3 FOLDED>vfio-user</H3>
+								<DL><p>
+									<DT><A HREF="https://www.qemu.org/docs/master/system/devices/vfio-user.html">vfio-user — QEMU documentation</A>
+								</DL><p>
 								<DT><A HREF="https://fms.komkon.org/EMUL8/HOWTO.html">HOWTO: Writing a Computer Emulator</A>
 								<DT><A HREF="https://www.youtube.com/watch?v=Kq849CpGd88">QEMU Performance</A>
 							</DL><p>
@@ -27163,6 +27345,14 @@ Programming Guide</A>
 							<DL><p>
 								<DT><A HREF="https://github.com/derailed/k9s">derailed/k9s: 🐶 Kubernetes CLI To Manage Your Clusters In Style!</A>
 							</DL><p>
+							<DT><H3 FOLDED>k8s-network-observability</H3>
+							<DL><p>
+								<DT><H3 FOLDED>cilium-hubble</H3>
+								<DL><p>
+									<DT><A HREF="https://github.com/cilium/hubble">cilium/hubble: Hubble - Network, Service &amp; Security Observability for Kubernetes using eBPF</A>
+									<DT><A HREF="https://isovalent.com/blog/post/openai-isovalent-networking-kubernetes-case-study/">OpenAI Uses Isovalent for a Common Networking for AI Infrastructure</A>
+								</DL><p>
+							</DL><p>
 							<DT><H3 FOLDED>helm</H3>
 							<DL><p>
 								<DT><A HREF="https://helm.sh/">Helm</A>
@@ -27188,6 +27378,7 @@ Programming Guide</A>
 							<DT><A HREF="https://grok.com/chat/9a910d96-103e-4a6c-b88d-002abf5c2b44">NVIDIA B200 Cluster for AI Experiments - Grok</A>
 							<DT><A HREF="https://www.youtube.com/watch?v=6IPu3WU_M0o">Kubernetes Basics: Pods, Nodes, Containers, Deployments &amp; Clusters - YouTube</A>
 							<DT><A HREF="https://pytorch.org/blog/kubetorch-joins-the-pytorch-ecosystem-landscape/">Kubetorch Joins the PyTorch Ecosystem Landscape: A Fast, Pythonic, Fault-Tolerant Interface into Kubernetes for ML – PyTorch</A>
+							<DT><A HREF="https://isovalent.com/blog/post/openai-isovalent-networking-kubernetes-case-study/">OpenAI Uses Isovalent for a Common Networking for AI Infrastructure</A>
 						</DL><p>
 						<DT><H3 FOLDED>job scheduler</H3>
 						<DL><p>
